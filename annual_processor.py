@@ -1,6 +1,6 @@
 """
 =============================================================================
-ANNUAL RESULT PROCESSOR  v1  — EXE-compatible
+ANNUAL RESULT PROCESSOR  v2  — API-based download/upload, 24×7 resilient
 =============================================================================
 Flow:
   1. ACE Annual Poller Thread monitors "Annual Update Ace.xlsx" every 30 min:
@@ -9,7 +9,7 @@ Flow:
      c. Reads all Company Names from column B (row 3 onward)
      d. Queues any company not yet processed today (5-min initial delay)
   2. Worker Thread picks items from queue after their delay:
-     a. Download Excel from Charcha (Selenium)
+     a. Download Excel from Charcha (API)
      b. Open in xlwings
      c. Find ANN / ANNUAL marker in header row 1
      d. In the ANNUAL section (columns AFTER the marker only):
@@ -20,10 +20,11 @@ Flow:
      e. RefreshAll + CalculateFull
      f. Compare PAT before vs after
      g. Check Sources of Funds > 0
-     h. If both updated → save, upload, send Slack
+     h. If both updated → save, upload via API, send Slack
      i. If not yet live  → delete file, re-queue 30 min later
 
 No NSE/BSE scraping.  No database lookups or writes.
+No Selenium — all Charcha I/O goes through api_client.APIClient.
 =============================================================================
 """
 
@@ -41,13 +42,9 @@ import pandas as pd
 from datetime import datetime, timedelta
 from queue import PriorityQueue, Empty
 from threading import Thread, Lock, Event
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import xlwings as xw
+
+from api_client import APIClient
 
 
 # ================================================================
@@ -80,11 +77,6 @@ logging.basicConfig(
 # ================================================================
 # Configuration
 # ================================================================
-
-# --- Charcha Portal ---
-CHARCHA_URL  = os.environ.get("CHARCHA_URL",  "https://charcha.iwealthindia.com")
-CHARCHA_USER = os.environ.get("CHARCHA_USER", "info@iwealthindia.com")
-CHARCHA_PASS = os.environ.get("CHARCHA_PASS", "Iwealth@1210")
 
 # --- Directories ---
 BASE_DIR         = os.environ.get("BASE_DIR", EXE_DIR)
@@ -128,11 +120,13 @@ EXCEL_REFRESH_WAIT        = int(os.environ.get("EXCEL_REFRESH_WAIT", "20"))   # 
 ACE_REFRESH_WAIT          = int(os.environ.get("ACE_REFRESH_WAIT", "300"))    # max sec wait after ACE Excel refresh
 COMPANY_SEARCH_TIMEOUT    = int(os.environ.get("COMPANY_SEARCH_TIMEOUT", "8"))  # sec to find a search match before "not found"
 
+# 24×7 resilience: cooldown before restarting the main loop after unhandled error
+RUN_LOOP_COOLDOWN         = int(os.environ.get("RUN_LOOP_COOLDOWN", "60"))  # seconds
+
 
 class CompanyNotFoundError(Exception):
-    """Raised when a company name yields no matching search result on Charcha.
-    Distinct from browser crashes so the worker skips fast (mark failed)
-    instead of restarting Chrome."""
+    """Raised when a company name is not in the Charcha allow-list.
+    The worker skips fast (marks failed) without attempting a download."""
     pass
 
 for d in [RESULT_FILES_DIR, UPDATED_DIR, DATA_DIR]:
@@ -147,8 +141,10 @@ done_today = set()
 in_queue   = set()
 stop_event = Event()
 
-_driver = None
-_wait   = None
+# ================================================================
+# API Client (singleton, lazily initialised in run())
+# ================================================================
+_api_client: APIClient | None = None
 
 
 # ================================================================
@@ -540,23 +536,6 @@ def mark_skipped(company_name, reason):
         f.write(f"{ts} | {company_name} | {reason}\n")
 
 
-def wait_for_download(directory, before_files, timeout=60):
-    elapsed = 0
-    while elapsed < timeout:
-        current   = {f for f in os.listdir(directory) if f.endswith(".xlsx")}
-        new_files = current - before_files
-        if new_files:
-            new_file = max(
-                [os.path.join(directory, f) for f in new_files],
-                key=os.path.getctime,
-            )
-            if not any(f.endswith(".crdownload") for f in os.listdir(directory)):
-                logging.info(f"Download complete: {os.path.basename(new_file)}")
-                return new_file
-        time.sleep(1)
-        elapsed += 1
-    raise TimeoutError(f"Download not complete within {timeout}s")
-
 
 def safe_float(v):
     if v is None:
@@ -908,173 +887,18 @@ def read_ace_annual_companies() -> list:
 
 
 # ================================================================
-# Selenium — Charcha Portal
+# API Download / Upload Wrappers
 # ================================================================
 
-def create_driver():
-    global _driver, _wait
-    if _driver:
-        try:
-            _driver.quit()
-        except Exception:
-            pass
-
-    opts = Options()
-    opts.add_argument("--incognito")
-    opts.add_argument("--start-maximized")
-    opts.add_argument("--no-sandbox")
-    opts.add_argument("--disable-dev-shm-usage")
-    opts.add_argument("--disable-gpu")
-    opts.add_argument("--disable-software-rasterizer")
-    opts.add_argument("--remote-debugging-port=0")  # let OS pick a free port; avoids GetHandleVerifier on restart
-    opts.add_experimental_option("excludeSwitches", ["enable-automation"])
-    opts.add_experimental_option("prefs", {
-        "download.default_directory": RESULT_FILES_DIR,
-        "download.prompt_for_download": False,
-    })
-
-    chromedriver_path = os.path.join(EXE_DIR, "chromedriver.exe")
-    if os.path.exists(chromedriver_path):
-        logging.info(f"Using local ChromeDriver: {chromedriver_path}")
-        service = Service(executable_path=chromedriver_path)
-        _driver = webdriver.Chrome(service=service, options=opts)
-    else:
-        logging.info("Using Selenium Manager for ChromeDriver (auto-download)")
-        _driver = webdriver.Chrome(options=opts)
-
-    _driver.execute_cdp_cmd(
-        "Page.setDownloadBehavior",
-        {"behavior": "allow", "downloadPath": RESULT_FILES_DIR},
-    )
-    _wait = WebDriverWait(_driver, 45)
-    logging.info("Chrome session created")
-    return _driver, _wait
-
-
-def ensure_driver():
-    global _driver, _wait
-    try:
-        if _driver:
-            _ = _driver.title
-            return _driver, _wait
-    except Exception:
-        pass
-    logging.info("Browser session dead — recreating...")
-    charcha_login()   # creates fresh Chrome + logs in, updates _driver/_wait
-    return _driver, _wait
-
-
-def charcha_login(max_attempts: int = 10, retry_wait_secs: int = 60):
+def api_download(company_name: str) -> str:
     """
-    Create a fresh Chrome session and log in to Charcha.
-    On each failed attempt the browser is fully killed and recreated so
-    stale/broken render state never carries over.
-    Updates the global _driver / _wait on success.
+    Download a company Excel file via the API client.
+
+    Checks the Charcha allow-list first; raises CompanyNotFoundError if the
+    company is not in the list.
+
+    Returns the local file path of the saved .xlsx in RESULT_FILES_DIR.
     """
-    global _driver, _wait
-
-    for attempt in range(1, max_attempts + 1):
-        # Always start with a completely fresh Chrome instance
-        _kill_chrome_processes()
-        try:
-            create_driver()                   # sets global _driver / _wait
-        except Exception as cd_err:
-            logging.warning(f"create_driver failed on attempt {attempt}: {cd_err}")
-            if attempt < max_attempts:
-                time.sleep(retry_wait_secs)
-            continue
-
-        try:
-            logging.info(
-                f"Logging in to Charcha (attempt {attempt}/{max_attempts})..."
-            )
-            _driver.get(CHARCHA_URL)
-            time.sleep(5)                     # let React/JS start rendering
-
-            # Detect hard server errors before waiting for elements
-            try:
-                page_src = _driver.page_source or ""
-            except Exception:
-                page_src = ""
-            if any(x in page_src for x in ["503", "502", "Service Temporarily Unavailable"]):
-                raise RuntimeError("Charcha returned a server error page (5xx)")
-
-            # Use a longer timeout specifically for the login form
-            login_wait = WebDriverWait(_driver, 90)
-            login_wait.until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "input[type='email']"))
-            ).send_keys(CHARCHA_USER)
-            _driver.find_element(
-                By.CSS_SELECTOR, "input[type='password']"
-            ).send_keys(CHARCHA_PASS)
-            btn = _driver.find_element(
-                By.XPATH, "//button[contains(., 'Enter Dashboard')]"
-            )
-            _driver.execute_script("arguments[0].click();", btn)
-            login_wait.until(
-                EC.visibility_of_element_located(
-                    (By.XPATH, "//input[contains(@placeholder, 'Search companies')]")
-                )
-            )
-
-            # Refresh once to clear any post-login blank-screen state
-            logging.info("Login succeeded — refreshing to clear any blank screen...")
-            _driver.refresh()
-            login_wait.until(
-                EC.visibility_of_element_located(
-                    (By.XPATH, "//input[contains(@placeholder, 'Search companies')]")
-                )
-            )
-            logging.info("Charcha login complete")
-            return  # success
-
-        except Exception as e:
-            logging.warning(
-                f"Charcha login attempt {attempt}/{max_attempts} failed: "
-                f"{str(e)[:200]}"
-            )
-            if attempt < max_attempts:
-                logging.info(
-                    f"Killing Chrome and retrying in {retry_wait_secs}s..."
-                )
-                time.sleep(retry_wait_secs)
-
-    raise RuntimeError(
-        f"Charcha login failed after {max_attempts} attempts — giving up."
-    )
-
-
-def _kill_chrome_processes():
-    """Kill all running Chrome and ChromeDriver processes."""
-    try:
-        if _driver:
-            _driver.quit()
-    except Exception:
-        pass
-    for proc in psutil.process_iter(["name"]):
-        try:
-            n = proc.info.get("name") or ""
-            if "chrome" in n.lower():
-                proc.kill()
-        except Exception:
-            pass
-    time.sleep(6)  # give Windows time to release port handles before next Chrome launch
-
-
-def go_to_dashboard():
-    try:
-        driver, wait = ensure_driver()
-        driver.get(CHARCHA_URL)
-        wait.until(
-            EC.visibility_of_element_located(
-                (By.XPATH, "//input[contains(@placeholder, 'Search companies')]")
-            )
-        )
-    except Exception:
-        pass
-
-
-def search_and_download(company_name) -> str:
     # Safety net: never attempt a download for a company not in the Charcha
     # allow-list (guards the worker / --test-one paths too, not just the poller).
     if not is_in_charcha_list(company_name):
@@ -1082,79 +906,21 @@ def search_and_download(company_name) -> str:
             f"'{company_name}' not in Charcha allow-list — not attempting download."
         )
 
-    driver, wait = ensure_driver()
-    logging.info(f"Downloading Excel: {company_name}")
-
-    sb = wait.until(
-        EC.visibility_of_element_located(
-            (By.XPATH, "//input[contains(@placeholder, 'Search companies')]")
-        )
-    )
-    sb.click(); sb.clear(); time.sleep(0.5)
-    sb.send_keys(company_name)
-
-    btn_xpath = (
-        f"//button[contains(@class, 'hover:bg-table-hover') "
-        f"and contains(., '{company_name}')]"
-    )
-    # Use a SHORT wait for the search result: a non-existent company simply
-    # never produces a matching button, and we must NOT block for the full
-    # 45s _wait timeout (and must NOT let that TimeoutException be mistaken for
-    # a browser crash). If no match appears quickly, fail fast with a dedicated
-    # CompanyNotFoundError so the worker can skip it without restarting Chrome.
-    time.sleep(1)  # let the search results render
-    short_find = WebDriverWait(driver, COMPANY_SEARCH_TIMEOUT)
-    try:
-        short_find.until(
-            EC.element_to_be_clickable((By.XPATH, btn_xpath))
-        ).click()
-    except Exception:
-        raise CompanyNotFoundError(
-            f"No matching company found for '{company_name}' "
-            f"within {COMPANY_SEARCH_TIMEOUT}s — skipping."
-        )
-
-    before = {f for f in os.listdir(RESULT_FILES_DIR) if f.endswith(".xlsx")}
-    time.sleep(2)
-    short = WebDriverWait(driver, 7)
-    try:
-        short.until(
-            EC.element_to_be_clickable(
-                (By.XPATH, "//button[contains(., 'Download')]")
-            )
-        ).click()
-    except Exception:
-        raise RuntimeError(f"Download button not found for '{company_name}'")
-
-    return wait_for_download(RESULT_FILES_DIR, before, timeout=60)
+    logging.info(f"Downloading Excel via API: {company_name}")
+    return _api_client.download_file(company_name, RESULT_FILES_DIR)
 
 
-def upload_file(company_name, file_path):
-    driver, wait = ensure_driver()
-    logging.info(f"Uploading: {company_name}")
+def api_upload(company_name: str, file_path: str):
+    """
+    Upload an updated company Excel file via the API client.
 
-    sb = wait.until(
-        EC.visibility_of_element_located(
-            (By.XPATH, "//input[contains(@placeholder, 'Search companies')]")
-        )
-    )
-    sb.click(); sb.clear(); time.sleep(0.5)
-    sb.send_keys(company_name)
-
-    btn_xpath = (
-        f"//button[contains(@class, 'hover:bg-table-hover') "
-        f"and contains(., '{company_name}')]"
-    )
-    wait.until(EC.element_to_be_clickable((By.XPATH, btn_xpath))).click()
-
-    fi = wait.until(
-        EC.presence_of_element_located((By.XPATH, "//input[@type='file']"))
-    )
-    fi.send_keys(file_path)
-    # Wait for the upload to register on Charcha. Kept conservative (outward-
-    # facing); env-overridable but don't cut too low or uploads may not finish.
-    time.sleep(int(os.environ.get("UPLOAD_WAIT", "10")))
-    logging.info("Upload complete")
+    The file should be in UPDATED_DIR.  accord_code is not needed for the
+    upload endpoint (it only uses company_name), but we pass a placeholder
+    for compatibility with APIClient.upload_file().
+    """
+    logging.info(f"Uploading via API: {company_name}")
+    _api_client.upload_file(file_path, company_name=company_name, accord_code="000000")
+    logging.info(f"API upload complete: {company_name}")
 
 
 # ================================================================
@@ -1763,39 +1529,21 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                 force_kill_excel()
 
                 try:
-                    downloaded = search_and_download(company_name)
+                    downloaded = api_download(company_name)
                 except CompanyNotFoundError as nf_err:
-                    # Name not on Charcha -> skip FAST, mark failed, do NOT
-                    # restart the browser. Checked first so it can never be
-                    # misclassified as a browser crash.
+                    # Name not on Charcha allow-list -> skip FAST, mark failed.
                     logging.warning(f"Company not found '{company_name}': {nf_err}")
                     mark_skipped(company_name, f"Not found: {nf_err}")
                     tracker_update(company_name, "failed", reason="Company not found on Charcha")
                     with state_lock:
                         in_queue.discard(company_name)
-                    go_to_dashboard()
                     continue
                 except Exception as dl_err:
-                    logging.warning(f"Download failed '{company_name}': {dl_err}")
-                    if _is_browser_crash_error(dl_err):
-                        logging.warning(
-                            f"Browser crash on download for '{company_name}' "
-                            f"— restarting and re-queuing (attempt #{attempt})"
-                        )
-                        _restart_browser()
-                        retry_at = datetime.now() + timedelta(minutes=2)
-                        item["attempt"] = attempt
-                        processing_queue.put((retry_at, id(item), item))
-                        logging.info(
-                            f"Re-queued '{company_name}' after browser restart "
-                            f"-> {retry_at.strftime('%H:%M:%S')}"
-                        )
-                    else:
-                        mark_skipped(company_name, f"Download: {dl_err}")
-                        tracker_update(company_name, "failed", reason=f"Download error: {dl_err}")
-                        with state_lock:
-                            in_queue.discard(company_name)
-                        go_to_dashboard()
+                    logging.warning(f"API download failed '{company_name}': {dl_err}")
+                    mark_skipped(company_name, f"Download: {dl_err}")
+                    tracker_update(company_name, "failed", reason=f"Download error: {dl_err}")
+                    with state_lock:
+                        in_queue.discard(company_name)
                     continue
 
                 try:
@@ -1811,13 +1559,12 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                     _safe_delete(downloaded)
                     with state_lock:
                         in_queue.discard(company_name)
-                    go_to_dashboard()
                     continue
 
                 if result_file and os.path.exists(result_file):
                     try:
                         force_kill_excel()
-                        upload_file(company_name, result_file)
+                        api_upload(company_name, result_file)
                         with state_lock:
                             done_today.add(company_name)
                             in_queue.discard(company_name)
@@ -1861,53 +1608,12 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                     in_queue.discard(company_name)
 
             force_kill_excel()
-            go_to_dashboard()
 
         except Exception as outer_err:
             logging.error(f"Worker outer error: {outer_err}")
             time.sleep(5)
 
     logging.info("Annual Worker thread stopped")
-
-
-def _is_browser_crash_error(err: Exception) -> bool:
-    crash_signatures = [
-        "GetHandleVerifier",
-        "invalid session id",
-        "session deleted",
-        "chrome not reachable",
-        "renderer",
-        "no such window",
-        "disconnected",
-        "target window already closed",
-        "webdriverexception",
-    ]
-    msg = str(err).lower()
-    return any(sig.lower() in msg for sig in crash_signatures)
-
-
-def _restart_browser():
-    global _driver, _wait
-    logging.warning("Browser crash detected — restarting Chrome and re-logging in...")
-    try:
-        if _driver:
-            _driver.quit()
-    except Exception:
-        pass
-    _driver = None
-    _wait   = None
-    for proc in psutil.process_iter(["name"]):
-        try:
-            if proc.info["name"] and "chrome" in proc.info["name"].lower():
-                proc.kill()
-        except Exception:
-            pass
-    time.sleep(6)  # give Windows time to release port handles before next Chrome launch
-    try:
-        charcha_login()   # kills Chrome, recreates, logs in
-        logging.info("Browser restarted and re-logged in successfully")
-    except Exception as e:
-        logging.error(f"Browser restart failed: {e}")
 
 
 def _safe_delete(path):
@@ -1961,7 +1667,7 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
             company_name = co["company_name"]
 
             # Skip companies that are not in the Charcha DB allow-list — no point
-            # downloading; mark failed and move on (fast, no browser activity).
+            # downloading; mark failed and move on.
             if not is_in_charcha_list(company_name):
                 logging.info(
                     f"ACE Poller: '{company_name}' not in Charcha allow-list "
@@ -2015,8 +1721,10 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
 # ================================================================
 
 def run():
+    global _api_client
+
     logging.info("=" * 60)
-    logging.info("Annual Result Processor v1 starting...")
+    logging.info("Annual Result Processor v2 starting (API mode, 24×7)...")
     logging.info(f"EXE directory: {EXE_DIR}")
     logging.info(f"Base directory: {BASE_DIR}")
     logging.info(f"ACE Excel: {ANNUAL_ACE_EXCEL}")
@@ -2025,11 +1733,13 @@ def run():
 
     trust_download_folder(RESULT_FILES_DIR)
 
-    # Chrome session — charcha_login() handles create_driver internally + retries
+    # Initialise the API client (handles token generation/refresh internally)
+    _api_logger = logging.getLogger("api_client")
+    _api_client = APIClient(_api_logger, _api_logger)
     try:
-        charcha_login()
+        _api_client.login()
     except Exception as e:
-        logging.warning(f"Initial Charcha login error: {e} — will retry on first use")
+        logging.warning(f"Initial API login error: {e} — will retry on first use")
 
     # Pre-populate done_today from metadata.json (survives restart)
     with state_lock:
@@ -2074,13 +1784,42 @@ def run():
         stop_event.set()
         poller_t.join(timeout=15)
         worker_t.join(timeout=15)
-        try:
-            if _driver:
-                _driver.quit()
-        except Exception:
-            pass
+        if _api_client:
+            _api_client.close()
         force_kill_excel()
         logging.info("Shutdown complete.")
+
+
+def run_forever():
+    """
+    24×7 resilience wrapper around run().
+
+    If run() raises an unhandled exception, log the full traceback, wait
+    RUN_LOOP_COOLDOWN seconds, and restart — unless the stop_event has been
+    set (clean shutdown via Ctrl+C).
+    """
+    while not stop_event.is_set():
+        try:
+            run()
+            break  # run() exited cleanly (e.g. KeyboardInterrupt handled inside)
+        except KeyboardInterrupt:
+            logging.info("KeyboardInterrupt caught in run_forever — shutting down.")
+            stop_event.set()
+            break
+        except Exception:
+            logging.error(
+                f"UNHANDLED ERROR in run() — will restart after "
+                f"{RUN_LOOP_COOLDOWN}s cooldown.\n{traceback.format_exc()}"
+            )
+            if stop_event.is_set():
+                break
+            stop_event.wait(RUN_LOOP_COOLDOWN)
+            if stop_event.is_set():
+                break
+            logging.info("Restarting run() loop...")
+            # Reset thread-safe state for fresh start
+            with state_lock:
+                in_queue.clear()
 
 
 def diagnose_ace():
@@ -2325,6 +2064,8 @@ def test_one(company_name: str, period: str = ""):
         python annual_processor.py --test-one "Castrol India Ltd" 202512
     Invoked via:  python annual_processor.py --test-one "Company Name Ltd"
     """
+    global _api_client
+
     print("=" * 60)
     print(f">>> TEST ONE COMPANY (no upload): {company_name} <<<")
     print("=" * 60)
@@ -2339,16 +2080,19 @@ def test_one(company_name: str, period: str = ""):
         src_month, src_yy, tgt_month, tgt_yy = parsed
     print(f"  using period -> copy {src_month}/{src_yy:02d} -> {tgt_month}/{tgt_yy:02d}")
 
+    # Initialise API client for download
+    _api_logger = logging.getLogger("api_client")
+    _api_client = APIClient(_api_logger, _api_logger)
     try:
-        charcha_login()
+        _api_client.login()
     except Exception as e:
-        print(f"  Charcha login failed: {e}")
+        print(f"  API login failed: {e}")
         return
 
     downloaded = None
     try:
         force_kill_excel()
-        downloaded = search_and_download(company_name)
+        downloaded = api_download(company_name)
         print(f"  downloaded: {downloaded}")
         result = process_annual_excel_file(
             downloaded, company_name,
@@ -2367,11 +2111,8 @@ def test_one(company_name: str, period: str = ""):
     finally:
         force_kill_excel()
         _safe_delete(downloaded)
-        try:
-            if _driver:
-                _driver.quit()
-        except Exception:
-            pass
+        if _api_client:
+            _api_client.close()
 
 
 if __name__ == "__main__":
@@ -2393,9 +2134,4 @@ if __name__ == "__main__":
             test_one(name, period)
         input("\nPress Enter to exit...")
         sys.exit(0)
-    try:
-        run()
-    except Exception as e:
-        logging.error(f"FATAL UNHANDLED ERROR: {e}")
-        traceback.print_exc()
-        input("\nPress Enter to exit...")
+    run_forever()
