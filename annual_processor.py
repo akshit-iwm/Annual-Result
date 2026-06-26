@@ -666,6 +666,23 @@ def _load_done_today() -> set:
     except Exception as e:
         logging.warning(f"Could not load uploaded companies from tracker: {e}")
 
+    # Backward compatibility: also check the old metadata.json files
+    # (including the Archived one) so we skip historically processed files.
+    meta_paths = [
+        os.path.join(DATA_DIR, "metadata.json"),
+        os.path.join(BASE_DIR, "Archived", "metadata.json")
+    ]
+    for m_path in meta_paths:
+        try:
+            if os.path.exists(m_path):
+                with open(m_path, "r", encoding="utf-8") as f:
+                    meta_data = json.load(f)
+                # metadata.json is a simple dict: {"Company Name": {"uploader": "...", ...}}
+                for company_name in meta_data.keys():
+                    result.add(company_name)
+        except Exception as e:
+            logging.warning(f"Could not load uploaded companies from {m_path}: {e}")
+
     if result:
         logging.info(
             f"Loaded {len(result)} already-uploaded companies "
