@@ -1,0 +1,370 @@
+2026-06-10 14:43 | Atishay Ltd | Download: Download button not found for 'Atishay Ltd'
+2026-06-10 19:34 | Aurique Ltd | Download: Charcha login failed after 10 attempts — giving up.
+2026-06-10 19:41 | DIC India Ltd | Excel: (-2147023174, 'The RPC server is unavailable.', None, None)
+2026-06-10 22:19 | GM Breweries Ltd | Download: HTTPConnectionPool(host='localhost', port=53420): Max retries exceeded with url: /session/6b9623460a704ecb7cac22da7a290c43/element (Caused by NewConnectionError("HTTPConnection(host='localhost', port=53420): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-06-11 03:14 | Infosys Ltd | Download: Charcha login failed after 10 attempts — giving up.
+2026-06-11 03:16 | Kalana Ispat Ltd | Download: Download button not found for 'Kalana Ispat Ltd'
+2026-06-11 05:50 | Novus Loyalty Ltd | Download: Charcha login failed after 10 attempts — giving up.
+2026-06-11 05:50 | Odyssey Technologies Ltd | Download: Download button not found for 'Odyssey Technologies Ltd'
+2026-06-11 07:20 | Ponni Sugars (Erode) Ltd | Download: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2026-06-15 14:58 | Atishay Ltd | Download: Download button not found for 'Atishay Ltd'
+2026-06-15 16:02 | Kalana Ispat Ltd | Download: Download button not found for 'Kalana Ispat Ltd'
+2026-06-15 16:25 | Mahindra EPC Irrigation Ltd | Download: Download button not found for 'Mahindra EPC Irrigation Ltd'
+2026-06-15 16:29 | Odyssey Technologies Ltd | Download: Download button not found for 'Odyssey Technologies Ltd'
+2026-06-15 16:37 | PIL ITALICA Lifestyle Ltd | Download: Download button not found for 'PIL ITALICA Lifestyle Ltd'
+2026-06-15 16:47 | Ponni Sugars (Erode) Ltd | Download: Download button not found for 'Ponni Sugars (Erode) Ltd'
+2026-06-15 17:17 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-15 17:20 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-15 17:21 | Shekhawati Industries Ltd | Download: Download button not found for 'Shekhawati Industries Ltd'
+2026-06-15 17:22 | Spinaroo Commercial Ltd | Download: Download button not found for 'Spinaroo Commercial Ltd'
+2026-06-15 17:23 | State Bank Of India | Download: Download not complete within 60s
+2026-06-15 19:37 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-15 20:16 | Aravali Securities & Finance Ltd | Download: Download button not found for 'Aravali Securities & Finance Ltd'
+2026-06-15 20:55 | Atishay Ltd | Download: Download button not found for 'Atishay Ltd'
+2026-06-15 21:23 | Cinevista Ltd | Download: Download button not found for 'Cinevista Ltd'
+2026-06-16 02:34 | Gillanders Arbuthnot & Company Ltd | Download: Download button not found for 'Gillanders Arbuthnot & Company Ltd'
+2026-06-16 02:36 | Global Longlife Hospital and Research Ltd | Download: Download button not found for 'Global Longlife Hospital and Research Ltd'
+2026-06-16 13:37 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-16 14:47 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-16 14:51 | Amba Enterprises Ltd | Download: Download button not found for 'Amba Enterprises Ltd'
+2026-06-16 16:19 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 02:35 | DMR Engineering Ltd | Download: Download button not found for 'DMR Engineering Ltd'
+2026-06-17 02:37 | Elegant Marbles & Grani Industries Ltd | Download: Download button not found for 'Elegant Marbles & Grani Industries Ltd'
+2026-06-17 02:37 | Gillanders Arbuthnot & Company Ltd | Download: Download button not found for 'Gillanders Arbuthnot & Company Ltd'
+2026-06-17 02:38 | Global Longlife Hospital and Research Ltd | Download: Download button not found for 'Global Longlife Hospital and Research Ltd'
+2026-06-17 09:08 | Kalana Ispat Ltd | Download: Download button not found for 'Kalana Ispat Ltd'
+2026-06-17 09:09 | Key Corp Ltd | Download: Download button not found for 'Key Corp Ltd'
+2026-06-17 09:24 | Mahindra EPC Irrigation Ltd | Download: Download button not found for 'Mahindra EPC Irrigation Ltd'
+2026-06-17 09:24 | Master Components Ltd | Download: Download button not found for 'Master Components Ltd'
+2026-06-17 09:24 | Mawana Sugars Ltd | Download: Download button not found for 'Mawana Sugars Ltd'
+2026-06-17 09:49 | Morarka Finance Ltd | Download: Download button not found for 'Morarka Finance Ltd'
+2026-06-17 10:13 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 10:26 | Aravali Securities & Finance Ltd | Download: Download button not found for 'Aravali Securities & Finance Ltd'
+2026-06-17 10:30 | Atishay Ltd | Download: Download button not found for 'Atishay Ltd'
+2026-06-17 15:07 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 15:33 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 15:34 | ACC Ltd | Excel: (-2147417848, 'The object invoked has disconnected from its clients.', None, None)
+2026-06-17 15:46 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 15:47 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 15:48 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 15:51 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 15:52 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 15:53 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 15:56 | Amba Enterprises Ltd | Download: Download button not found for 'Amba Enterprises Ltd'
+2026-06-17 16:00 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 16:01 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 16:02 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 16:03 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 16:04 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 16:05 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 16:07 | Amba Enterprises Ltd | Download: Download button not found for 'Amba Enterprises Ltd'
+2026-06-17 16:15 | Aravali Securities & Finance Ltd | Download: Download button not found for 'Aravali Securities & Finance Ltd'
+2026-06-17 16:19 | Atishay Ltd | Download: Download button not found for 'Atishay Ltd'
+2026-06-17 16:23 | Aakaar Medical Technologies Ltd | Download: Download button not found for 'Aakaar Medical Technologies Ltd'
+2026-06-17 16:25 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 16:26 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 16:26 | Adjia Technologies Ltd | Not found: No matching company found for 'Adjia Technologies Ltd' within 8s — skipping.
+2026-06-17 16:26 | Amba Enterprises Ltd | Download: Download button not found for 'Amba Enterprises Ltd'
+2026-06-17 16:26 | Apollo Ingredients Ltd | Not found: No matching company found for 'Apollo Ingredients Ltd' within 8s — skipping.
+2026-06-17 16:26 | Aravali Securities & Finance Ltd | Download: Download button not found for 'Aravali Securities & Finance Ltd'
+2026-06-17 16:27 | Asian Hotels (West) Ltd | Not found: No matching company found for 'Asian Hotels (West) Ltd' within 8s — skipping.
+2026-06-17 16:27 | Atishay Ltd | Download: Download button not found for 'Atishay Ltd'
+2026-06-17 16:27 | Audroc Ltd | Not found: No matching company found for 'Audroc Ltd' within 8s — skipping.
+2026-06-17 16:27 | Aurique Ltd | Not found: No matching company found for 'Aurique Ltd' within 8s — skipping.
+2026-06-17 17:51 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 17:52 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 18:12 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-17 18:30 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-17 18:58 | Indian Overseas Bank | Download: Download not complete within 60s
+2026-06-17 19:49 | John Cockerill India Ltd | Excel: (-2147417848, 'The object invoked has disconnected from its clients.', None, None)
+2026-06-17 20:23 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 20:24 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 20:25 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-17 20:27 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-17 20:30 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-17 21:26 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-17 21:48 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-17 21:58 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-17 22:11 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-17 22:36 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-17 22:38 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-17 22:41 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 22:42 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 22:44 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-17 22:45 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-17 22:46 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-17 22:55 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 22:56 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 22:57 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-17 22:58 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-17 22:59 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-17 23:01 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-17 23:02 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-17 23:02 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-17 23:02 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-17 23:03 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-17 23:03 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-17 23:26 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 23:27 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 23:28 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-17 23:30 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-17 23:32 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-17 23:33 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-17 23:34 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-17 23:34 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-17 23:35 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-17 23:36 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-17 23:36 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-17 23:56 | ACC Ltd | Download: Download not complete within 60s
+2026-06-17 23:57 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-17 23:58 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-17 23:59 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 00:00 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 00:01 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 00:03 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 00:03 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 00:03 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 00:04 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 00:04 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 00:26 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 00:28 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 00:29 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 00:30 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 00:31 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 00:32 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 00:33 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 00:33 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 00:33 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 00:34 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 00:35 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 00:57 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 00:58 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 00:59 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 01:00 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 01:01 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 01:02 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 01:03 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 01:04 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 01:04 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 01:05 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 01:05 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 01:27 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 01:28 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 01:29 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 01:31 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 01:32 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 01:33 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 01:34 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 01:34 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 01:34 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 01:35 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 01:36 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 01:58 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 01:59 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 02:00 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 02:01 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 02:02 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 02:03 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 02:04 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 02:04 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 02:05 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 02:06 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 02:06 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 02:28 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 02:29 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 02:30 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 02:31 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 02:33 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 02:34 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 02:35 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 02:35 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 02:35 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 02:36 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 02:36 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 02:59 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 03:00 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 03:01 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 03:02 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 03:03 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 03:04 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 03:05 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 03:05 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 03:06 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 03:07 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 03:07 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 03:29 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 03:30 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 03:31 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 03:32 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 03:33 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 03:35 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 03:36 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 03:36 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 03:36 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 03:37 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 03:37 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 04:00 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 04:01 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 04:02 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 04:03 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 04:04 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 04:05 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 04:06 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 04:06 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 04:06 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 04:08 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 04:08 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 04:30 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 04:31 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 04:32 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 04:33 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 04:34 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 04:35 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 04:37 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 04:37 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 04:37 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 04:38 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 04:38 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 05:00 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 05:02 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 05:03 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 05:04 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 05:05 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 05:06 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 05:07 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 05:07 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 05:07 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 05:08 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 05:09 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 05:31 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 05:32 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 05:33 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 05:34 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 05:35 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 05:36 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 05:37 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 05:38 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 05:38 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 05:39 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 05:39 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 06:01 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 06:02 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 06:04 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 06:05 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 06:06 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 06:07 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 06:08 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 06:08 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 06:08 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 06:09 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 06:10 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 06:32 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 06:33 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 06:34 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 06:35 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 06:36 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 06:37 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 06:38 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 06:39 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 06:39 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 06:40 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 06:40 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 07:02 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 07:03 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 07:04 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 07:06 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 07:07 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 07:08 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 07:09 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 07:09 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 07:09 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 07:10 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 07:10 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 07:33 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 07:34 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 07:35 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 07:36 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 07:37 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 07:38 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 07:39 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 07:39 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 07:40 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 07:41 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 07:41 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 08:03 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 08:04 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 08:05 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 08:06 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 08:07 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 08:09 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 08:10 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 08:10 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 08:10 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 08:11 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 08:11 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 08:34 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 08:35 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 08:36 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 08:37 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 08:38 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 08:39 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 08:40 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 08:40 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 08:40 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 08:42 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 08:42 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 09:04 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 09:05 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 09:06 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 09:07 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 09:08 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 09:09 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 09:11 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 09:11 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 09:11 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 09:12 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 09:12 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 09:34 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 09:36 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 09:37 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 09:38 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 09:39 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 09:40 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 09:41 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 09:41 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 09:41 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 09:42 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 09:43 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 10:05 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 10:06 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 10:07 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 10:08 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 10:09 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 10:10 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 10:11 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 10:12 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 10:12 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 10:13 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 10:13 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 10:35 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 10:36 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 10:37 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 10:39 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 10:40 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 10:41 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 10:42 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 10:42 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 10:42 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 10:43 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 10:44 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'
+2026-06-18 11:06 | ACC Ltd | Download: Download not complete within 60s
+2026-06-18 11:07 | Adani Total Gas Ltd | Download: Download not complete within 60s
+2026-06-18 11:08 | Cyient Ltd | Download: Download not complete within 60s
+2026-06-18 11:09 | Glaxosmithkline Pharmaceuticals Ltd | Download: Download not complete within 60s
+2026-06-18 11:10 | Kennametal India Ltd | Download: Download not complete within 60s
+2026-06-18 11:11 | Nestle India Ltd | Download: Download not complete within 60s
+2026-06-18 11:12 | Reliance Industries Ltd | Download: Download not complete within 60s
+2026-06-18 11:12 | Shankara Building Products Ltd | Download: Download button not found for 'Shankara Building Products Ltd'
+2026-06-18 11:13 | Suraj Ltd | Download: Download button not found for 'Suraj Ltd'
+2026-06-18 11:14 | Varun Beverages Ltd | Download: Download not complete within 60s
+2026-06-18 11:14 | Vinyl Chemicals (India) Ltd | Download: Download button not found for 'Vinyl Chemicals (India) Ltd'

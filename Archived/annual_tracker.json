@@ -1,0 +1,4153 @@
+{
+    "2026-06-10": {
+        "ABB India Ltd": {
+            "status": "retrying",
+            "updated": "10-06-2026 17:35:37",
+            "period": "202512",
+            "reason": "Data not live yet, retry at 18:05:37 (attempt #2)"
+        },
+        "Accelya Solutions India Ltd": {
+            "status": "retrying",
+            "updated": "10-06-2026 17:36:35",
+            "period": "202506",
+            "reason": "Data not live yet, retry at 18:06:35 (attempt #2)"
+        },
+        "Anand Rathi Wealth Ltd": {
+            "status": "uploaded",
+            "updated": "10-06-2026 16:12:19",
+            "period": "202603"
+        },
+        "Angel One Ltd": {
+            "status": "uploaded",
+            "updated": "10-06-2026 16:13:32",
+            "period": "202603"
+        },
+        "Archean Chemical Industries Ltd": {
+            "status": "uploaded",
+            "updated": "10-06-2026 16:14:43",
+            "period": "202603"
+        },
+        "Asian Hotels (West) Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 17:36:36",
+            "period": "202603"
+        },
+        "Atishay Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 18:05:58",
+            "period": "202603"
+        },
+        "Audroc Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 18:35:41",
+            "period": "202603"
+        },
+        "Aurique Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 20:04:49",
+            "period": "202603",
+            "reason": "Download error: Charcha login failed after 10 attempts \u2014 giving up."
+        },
+        "Bank Of India": {
+            "status": "uploaded",
+            "updated": "10-06-2026 19:35:26",
+            "period": "202603"
+        },
+        "Canara Bank": {
+            "status": "uploaded",
+            "updated": "10-06-2026 19:36:37",
+            "period": "202603"
+        },
+        "Capital Small Finance Bank Ltd": {
+            "status": "uploaded",
+            "updated": "10-06-2026 19:37:49",
+            "period": "202603"
+        },
+        "Castrol India Ltd": {
+            "status": "retrying",
+            "updated": "10-06-2026 19:38:47",
+            "period": "202512",
+            "reason": "Data not live yet, retry at 20:08:47 (attempt #2)"
+        },
+        "CIE Automotive India Ltd": {
+            "status": "retrying",
+            "updated": "10-06-2026 19:39:45",
+            "period": "202512",
+            "reason": "Data not live yet, retry at 20:09:45 (attempt #2)"
+        },
+        "CRISIL Ltd": {
+            "status": "retrying",
+            "updated": "10-06-2026 19:40:43",
+            "period": "202512",
+            "reason": "Data not live yet, retry at 20:10:43 (attempt #2)"
+        },
+        "DIC India Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 20:04:49",
+            "period": "202512",
+            "reason": "Excel error: (-2147023174, 'The RPC server is unavailable.', None, None)"
+        },
+        "Elantas Beck India Ltd": {
+            "status": "retrying",
+            "updated": "10-06-2026 19:42:38",
+            "period": "202512",
+            "reason": "Data not live yet, retry at 20:12:38 (attempt #2)"
+        },
+        "eMudhra Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 20:11:44",
+            "period": "202603"
+        },
+        "Enkei Wheels (India) Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 20:41:56",
+            "period": "202512"
+        },
+        "Epigral Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 21:16:05",
+            "period": "202603"
+        },
+        "Foseco India Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 21:47:33",
+            "period": "202512"
+        },
+        "GM Breweries Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 22:39:57",
+            "period": "202603",
+            "reason": "Download error: HTTPConnectionPool(host='localhost', port=53420): Max retries exceeded with url: /session/6b9623460a704ecb7cac22da7a290c43/element (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=53420): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+        },
+        "Harmony Capital Services Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 22:49:03",
+            "period": "202603"
+        },
+        "Havells India Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 23:18:15",
+            "period": "202603"
+        },
+        "Hexaware Technologies Ltd": {
+            "status": "processing",
+            "updated": "10-06-2026 23:47:58",
+            "period": "202512"
+        },
+        "Himadri Speciality Chemical Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Himalaya Nutravedics India Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Huhtamaki India Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "ICICI Lombard General Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Indian Bank": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Infosys Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "JB Chemicals & Pharmaceuticals Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Jindal Saw Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Kalana Ispat Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Kennametal India Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202506"
+        },
+        "KSB Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "L&T Finance Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "L&T Technology Services Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Larsen & Toubro Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Lloyds Metals & Energy Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "LTM Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Mahindra EPC Irrigation Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Merritronix Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Mphasis Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Novus Loyalty Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Odyssey Technologies Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Oseaspre Consultants Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "PIL ITALICA Lifestyle Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "PlaySimple Games Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "Ponni Sugars (Erode) Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Punjab National Bank": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Pushp Brand (India) Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Rain Industries Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "Reliance Industries Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Sanofi India Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "Schaeffler India Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "Seshasayee Paper and Boards Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Shankara Building Products Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Shekhawati Industries Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Siemens Energy India Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202509"
+        },
+        "Spinaroo Commercial Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "State Bank Of India": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Stovec Industries Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "Swadha Nature Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Tata Consultancy Services Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Tata Consumer Products Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Tata Teleservices (Maharashtra) Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Teamtech Formwork Solutions Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Technojet Consultants Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "UCO Bank": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Ugro Capital Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Varun Beverages Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "Vesuvius India Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202512"
+        },
+        "Vinyl Chemicals (India) Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Wipro Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        },
+        "Yaashvi Jewellers Ltd": {
+            "status": "queued",
+            "updated": "10-06-2026 17:29:41",
+            "period": "202603"
+        }
+    },
+    "2026-06-11": {
+        "ABB India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Accelya Solutions India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202506"
+        },
+        "Anand Rathi Wealth Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Angel One Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Archean Chemical Industries Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Asian Hotels (West) Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Atishay Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Audroc Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Aurique Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Bank Of India": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Canara Bank": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Capital Small Finance Bank Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Castrol India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "CIE Automotive India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "CRISIL Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "DIC India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Elantas Beck India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "eMudhra Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Enkei Wheels (India) Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Epigral Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Foseco India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "GM Breweries Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Harmony Capital Services Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Havells India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Hexaware Technologies Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Himadri Speciality Chemical Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 00:17:40",
+            "period": "202603"
+        },
+        "Himalaya Nutravedics India Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 00:46:47",
+            "period": "202603"
+        },
+        "Huhtamaki India Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 01:16:22",
+            "period": "202512"
+        },
+        "ICICI Lombard General Insurance Company Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 01:45:49",
+            "period": "202603"
+        },
+        "Indian Bank": {
+            "status": "processing",
+            "updated": "11-06-2026 02:15:33",
+            "period": "202603"
+        },
+        "Infosys Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 03:50:12",
+            "period": "202603",
+            "reason": "Download error: Charcha login failed after 10 attempts \u2014 giving up."
+        },
+        "JB Chemicals & Pharmaceuticals Ltd": {
+            "status": "uploaded",
+            "updated": "11-06-2026 03:15:19",
+            "period": "202603"
+        },
+        "Jindal Saw Ltd": {
+            "status": "uploaded",
+            "updated": "11-06-2026 03:16:30",
+            "period": "202603"
+        },
+        "Kalana Ispat Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 03:50:12",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Kalana Ispat Ltd'"
+        },
+        "Kennametal India Ltd": {
+            "status": "retrying",
+            "updated": "11-06-2026 03:17:40",
+            "period": "202506",
+            "reason": "Data not live yet, retry at 03:47:40 (attempt #2)"
+        },
+        "KSB Ltd": {
+            "status": "retrying",
+            "updated": "11-06-2026 03:18:38",
+            "period": "202512",
+            "reason": "Data not live yet, retry at 03:48:38 (attempt #2)"
+        },
+        "L&T Finance Ltd": {
+            "status": "uploaded",
+            "updated": "11-06-2026 03:19:49",
+            "period": "202603"
+        },
+        "L&T Technology Services Ltd": {
+            "status": "uploaded",
+            "updated": "11-06-2026 03:21:01",
+            "period": "202603"
+        },
+        "Larsen & Toubro Ltd": {
+            "status": "uploaded",
+            "updated": "11-06-2026 03:22:15",
+            "period": "202603"
+        },
+        "Lloyds Metals & Energy Ltd": {
+            "status": "uploaded",
+            "updated": "11-06-2026 03:23:29",
+            "period": "202603"
+        },
+        "LTM Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 03:23:30",
+            "period": "202603"
+        },
+        "Mahindra EPC Irrigation Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 03:52:44",
+            "period": "202603"
+        },
+        "Merritronix Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 04:22:27",
+            "period": "202603"
+        },
+        "Mphasis Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 04:52:11",
+            "period": "202603"
+        },
+        "Novus Loyalty Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 05:54:18",
+            "period": "202603",
+            "reason": "Download error: Charcha login failed after 10 attempts \u2014 giving up."
+        },
+        "Odyssey Technologies Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 05:54:18",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Odyssey Technologies Ltd'"
+        },
+        "Oseaspre Consultants Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 05:50:58",
+            "period": "202603"
+        },
+        "PIL ITALICA Lifestyle Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 06:20:30",
+            "period": "202603"
+        },
+        "PlaySimple Games Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 06:50:12",
+            "period": "202512"
+        },
+        "Ponni Sugars (Erode) Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 07:27:23",
+            "period": "202603",
+            "reason": "Download error: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))"
+        },
+        "Punjab National Bank": {
+            "status": "processing",
+            "updated": "11-06-2026 07:49:18",
+            "period": "202603"
+        },
+        "Pushp Brand (India) Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 08:19:02",
+            "period": "202603"
+        },
+        "Rain Industries Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 08:48:45",
+            "period": "202512"
+        },
+        "Reliance Industries Ltd": {
+            "status": "processing",
+            "updated": "11-06-2026 09:18:29",
+            "period": "202603"
+        },
+        "Sanofi India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Schaeffler India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Seshasayee Paper and Boards Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Shankara Building Products Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Shekhawati Industries Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Siemens Energy India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202509"
+        },
+        "Spinaroo Commercial Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "State Bank Of India": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Stovec Industries Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Swadha Nature Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Tata Consultancy Services Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Tata Consumer Products Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Tata Teleservices (Maharashtra) Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Teamtech Formwork Solutions Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Technojet Consultants Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "UCO Bank": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Ugro Capital Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Varun Beverages Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Vesuvius India Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202512"
+        },
+        "Vinyl Chemicals (India) Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Wipro Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        },
+        "Yaashvi Jewellers Ltd": {
+            "status": "queued",
+            "updated": "11-06-2026 00:13:02",
+            "period": "202603"
+        }
+    },
+    "2026-06-15": {
+        "ABB India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 14:51:59",
+            "period": "202512"
+        },
+        "Accelya Solutions India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 14:53:10",
+            "period": "202506"
+        },
+        "Anand Rathi Wealth Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 14:54:39",
+            "period": "202603"
+        },
+        "Angel One Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 14:55:53",
+            "period": "202603"
+        },
+        "Archean Chemical Industries Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 14:57:05",
+            "period": "202603"
+        },
+        "Asian Hotels (West) Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 20:16:03",
+            "period": "202603"
+        },
+        "Atishay Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 21:03:22",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Atishay Ltd'"
+        },
+        "Audroc Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 20:55:33",
+            "period": "202603"
+        },
+        "Aurique Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 21:05:50",
+            "period": "202603"
+        },
+        "Bank Of India": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:01:47",
+            "period": "202603"
+        },
+        "Canara Bank": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:02:58",
+            "period": "202603"
+        },
+        "Capital Small Finance Bank Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:04:09",
+            "period": "202603"
+        },
+        "Castrol India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:05:21",
+            "period": "202512"
+        },
+        "CIE Automotive India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:06:33",
+            "period": "202512"
+        },
+        "CRISIL Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:07:46",
+            "period": "202512"
+        },
+        "DIC India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:08:57",
+            "period": "202512"
+        },
+        "Elantas Beck India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:10:09",
+            "period": "202512"
+        },
+        "eMudhra Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:11:21",
+            "period": "202603"
+        },
+        "Enkei Wheels (India) Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:12:34",
+            "period": "202512"
+        },
+        "Epigral Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:13:47",
+            "period": "202603"
+        },
+        "Foseco India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:14:58",
+            "period": "202512"
+        },
+        "GM Breweries Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:16:11",
+            "period": "202603"
+        },
+        "Harmony Capital Services Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Havells India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:40:16",
+            "period": "202603"
+        },
+        "Hexaware Technologies Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:41:28",
+            "period": "202512"
+        },
+        "Himadri Speciality Chemical Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:42:40",
+            "period": "202603"
+        },
+        "Himalaya Nutravedics India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Huhtamaki India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:51:12",
+            "period": "202512"
+        },
+        "ICICI Lombard General Insurance Company Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:52:24",
+            "period": "202603"
+        },
+        "Indian Bank": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:53:35",
+            "period": "202603"
+        },
+        "Infosys Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:54:46",
+            "period": "202603"
+        },
+        "JB Chemicals & Pharmaceuticals Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 15:59:45",
+            "period": "202603"
+        },
+        "Jindal Saw Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:02:02",
+            "period": "202603"
+        },
+        "Kalana Ispat Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Kalana Ispat Ltd'"
+        },
+        "Kennametal India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:03:25",
+            "period": "202506"
+        },
+        "KSB Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:04:38",
+            "period": "202512"
+        },
+        "L&T Finance Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:05:50",
+            "period": "202603"
+        },
+        "L&T Technology Services Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:13:49",
+            "period": "202603"
+        },
+        "Larsen & Toubro Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:15:03",
+            "period": "202603"
+        },
+        "Lloyds Metals & Energy Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:23:49",
+            "period": "202603"
+        },
+        "LTM Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Mahindra EPC Irrigation Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Mahindra EPC Irrigation Ltd'"
+        },
+        "Merritronix Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Mphasis Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:27:37",
+            "period": "202603"
+        },
+        "Novus Loyalty Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Odyssey Technologies Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Odyssey Technologies Ltd'"
+        },
+        "Oseaspre Consultants Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "PIL ITALICA Lifestyle Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'PIL ITALICA Lifestyle Ltd'"
+        },
+        "PlaySimple Games Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202512"
+        },
+        "Ponni Sugars (Erode) Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Ponni Sugars (Erode) Ltd'"
+        },
+        "Punjab National Bank": {
+            "status": "uploaded",
+            "updated": "15-06-2026 16:48:53",
+            "period": "202603"
+        },
+        "Pushp Brand (India) Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Rain Industries Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 17:15:56",
+            "period": "202512"
+        },
+        "Reliance Industries Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603",
+            "reason": "Download error: Download not complete within 60s"
+        },
+        "Sanofi India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 17:18:12",
+            "period": "202512"
+        },
+        "Schaeffler India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 17:19:25",
+            "period": "202512"
+        },
+        "Seshasayee Paper and Boards Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 17:20:37",
+            "period": "202603"
+        },
+        "Shankara Building Products Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Shankara Building Products Ltd'"
+        },
+        "Shekhawati Industries Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Shekhawati Industries Ltd'"
+        },
+        "Siemens Energy India Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 17:22:12",
+            "period": "202509"
+        },
+        "Spinaroo Commercial Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Spinaroo Commercial Ltd'"
+        },
+        "State Bank Of India": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603",
+            "reason": "Download error: Download not complete within 60s"
+        },
+        "Stovec Industries Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 17:24:40",
+            "period": "202512"
+        },
+        "Swadha Nature Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Consultancy Services Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Consumer Products Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Teleservices (Maharashtra) Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 18:36:11",
+            "period": "202603"
+        },
+        "Teamtech Formwork Solutions Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Technojet Consultants Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "UCO Bank": {
+            "status": "uploaded",
+            "updated": "15-06-2026 18:44:04",
+            "period": "202603"
+        },
+        "Ugro Capital Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 18:45:16",
+            "period": "202603"
+        },
+        "Varun Beverages Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202512"
+        },
+        "Vesuvius India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202512"
+        },
+        "Vinyl Chemicals (India) Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Wipro Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Yaashvi Jewellers Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Aakaar Medical Technologies Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 20:33:04",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Aakaar Medical Technologies Ltd'"
+        },
+        "ACC Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:38:45",
+            "period": "202603"
+        },
+        "Adani Energy Solutions Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:39:52",
+            "period": "202603"
+        },
+        "Adani Enterprises Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:41:00",
+            "period": "202603"
+        },
+        "Adani Green Energy Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:42:08",
+            "period": "202603"
+        },
+        "Adani Ports and Special Economic Zone Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:43:14",
+            "period": "202603"
+        },
+        "Adani Power Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:44:21",
+            "period": "202603"
+        },
+        "Adani Total Gas Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:45:27",
+            "period": "202603"
+        },
+        "Adjia Technologies Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 19:45:29",
+            "period": "202603"
+        },
+        "Alkyl Amines Chemicals Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:51:02",
+            "period": "202603"
+        },
+        "Amba Enterprises Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 19:51:03",
+            "period": "202603"
+        },
+        "Ambuja Cements Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 19:59:28",
+            "period": "202603"
+        },
+        "Anand Rathi Share & Stock Brokers Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 20:00:35",
+            "period": "202603"
+        },
+        "Andhra Cements Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 20:01:42",
+            "period": "202603"
+        },
+        "Apcotex Industries Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 20:02:50",
+            "period": "202603"
+        },
+        "Apollo Ingredients Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 20:02:51",
+            "period": "202603"
+        },
+        "Aravali Securities & Finance Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 20:33:04",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Aravali Securities & Finance Ltd'"
+        },
+        "Asian Paints Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 20:45:11",
+            "period": "202603"
+        },
+        "Avantel Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 21:12:20",
+            "period": "202603"
+        },
+        "Bank Of Baroda": {
+            "status": "uploaded",
+            "updated": "15-06-2026 21:13:26",
+            "period": "202603"
+        },
+        "Bank Of Maharashtra": {
+            "status": "uploaded",
+            "updated": "15-06-2026 21:14:32",
+            "period": "202603"
+        },
+        "Bansisons Tea Industries Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 21:14:33",
+            "period": "202603"
+        },
+        "Benares Hotels Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 21:20:48",
+            "period": "202603"
+        },
+        "Care Ratings Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 21:21:55",
+            "period": "202603"
+        },
+        "Cemindia Projects Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 21:23:02",
+            "period": "202603"
+        },
+        "Cinevista Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 21:33:40",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Cinevista Ltd'"
+        },
+        "Cipla Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 21:24:21",
+            "period": "202603"
+        },
+        "Classic Electricals Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 21:24:22",
+            "period": "202603"
+        },
+        "CreditAccess Grameen Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 21:51:55",
+            "period": "202603"
+        },
+        "Cyient DLM Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 22:21:02",
+            "period": "202603"
+        },
+        "Cyient Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 22:50:09",
+            "period": "202603"
+        },
+        "Dalmia Bharat Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 22:52:34",
+            "period": "202603"
+        },
+        "DCB Bank Ltd": {
+            "status": "uploaded",
+            "updated": "15-06-2026 22:53:40",
+            "period": "202603"
+        },
+        "Decorous Investment & Trading Co Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 22:53:41",
+            "period": "202603"
+        },
+        "DHP India Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 23:22:48",
+            "period": "202603"
+        },
+        "Divine Power Energy Ltd": {
+            "status": "processing",
+            "updated": "15-06-2026 23:51:54",
+            "period": "202603"
+        },
+        "DK Enterprises Global Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "DMR Engineering Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Eimco Elecon (India) Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Elecon Engineering Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Elegant Marbles & Grani Industries Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Fredun Pharmaceuticals Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Gala Precision Engineering Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "GHCL Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "GHCL Textiles Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Gillanders Arbuthnot & Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Glaxosmithkline Pharmaceuticals Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Global Longlife Hospital and Research Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "GNA Axles Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Grand Foundry Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Gujarat Lease Financing Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "HDB Financial Services Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "HDFC Asset Management Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Hexa Tradex Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "High Energy Batteries (India) Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Hindustan Unilever Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Hindustan Zinc Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Home First Finance Company India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Horizon Reclaim (India) Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "ICICI Prudential Asset Management Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "ICICI Prudential Life Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Indiafirst Life Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Indiamart Intermesh Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Indian Overseas Bank": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Innova Captab Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Inox India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Inspirisys Solutions Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "John Cockerill India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202512"
+        },
+        "JSL Industries Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Kansai Nerolac Paints Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Key Corp Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Krishana Phoschem Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Laurus Labs Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Madhya Bharat Agro Products Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Master Components Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Mawana Sugars Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Monika Alcobev Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Morarka Finance Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Nelco Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Nestle India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "New Delhi Television Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Nicco Parks & Resorts Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Norben Tea & Exports Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Oberoi Realty Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Orient Cement Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Panasonic Carbon India Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Paras Healthcare Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Photoquip (India) Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Piramal Finance Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "PNGS Gargi Fashion Jewellery Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "PNGS Reva Diamond Jewellery Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Polycab India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "PSP Projects Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Purple Finance Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "R Systems International Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202512"
+        },
+        "Raghav Productivity Enhancers Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Rallis India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Reliance Industrial Infrastructure Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "RK Fashion Accessories Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:29",
+            "period": "202603"
+        },
+        "Sagar Cements Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sangam (India) Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sanofi Consumer Healthcare India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202512"
+        },
+        "Satchmo Holdings Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "SBI Funds Management Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "SBI Life Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "SG Finserve Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Shalimar Wires Industries Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Shankara Buildpro Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sify Infinit Spaces Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "SJS Enterprises Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "SMC Global Securities Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Solitaire Machine Tools Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sonam Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "SRF Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "SSMD Agrotech India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Steel City Securities Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sterling and Wilson Renewable Energy Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sula Vineyards Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sundram Fasteners Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sungold Capital Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sungold Media And Entertainment Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Sunshield Chemicals Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Supreme Industries Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Suraj Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Susan Electricals India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Swadeshi Polytex Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Swarna Securities Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Swastika Investmart Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Chemicals Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Elxsi Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Investment Corporation Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Motors Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Power Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Steel Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tata Technologies Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Tejas Networks Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "The Indian Hotels Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Thyrocare Technologies Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Torrent Pharmaceuticals Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Trent Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Truhome Finance Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Unifinz Capital India Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Urban Company Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Vahh Chemicals Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Vedant Poly Fabs Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Vimta Labs Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Vivekanand Cotspin Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Voltas Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Yash Management & Satellite Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Zepto Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        },
+        "Zim Laboratories Ltd": {
+            "status": "queued",
+            "updated": "15-06-2026 19:32:30",
+            "period": "202603"
+        }
+    },
+    "2026-06-16": {
+        "Aakaar Medical Technologies Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 17:32:06",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Aakaar Medical Technologies Ltd'"
+        },
+        "ABB India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202512"
+        },
+        "ACC Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Accelya Solutions India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202506"
+        },
+        "Adani Energy Solutions Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Adani Enterprises Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Adani Green Energy Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Adani Ports and Special Economic Zone Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Adani Power Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Adani Total Gas Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Adjia Technologies Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 18:01:55",
+            "period": "202603"
+        },
+        "Alkyl Amines Chemicals Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Amba Enterprises Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 18:31:45",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Amba Enterprises Ltd'"
+        },
+        "Ambuja Cements Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Anand Rathi Share & Stock Brokers Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Anand Rathi Wealth Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Andhra Cements Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Angel One Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:49",
+            "period": "202603"
+        },
+        "Apcotex Industries Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Apollo Ingredients Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 19:01:36",
+            "period": "202603"
+        },
+        "Aravali Securities & Finance Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 19:29:59",
+            "period": "202603"
+        },
+        "Archean Chemical Industries Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Asian Hotels (West) Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 19:59:51",
+            "period": "202603"
+        },
+        "Asian Paints Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 20:29:42",
+            "period": "202603"
+        },
+        "Atishay Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 20:59:34",
+            "period": "202603"
+        },
+        "Audroc Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 21:29:28",
+            "period": "202603"
+        },
+        "Aurique Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 21:59:19",
+            "period": "202603"
+        },
+        "Avantel Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Bank Of Baroda": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Bank Of India": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Bank Of Maharashtra": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Bansisons Tea Industries Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 22:29:12",
+            "period": "202603"
+        },
+        "Benares Hotels Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Canara Bank": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Capital Small Finance Bank Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Care Ratings Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Castrol India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Cemindia Projects Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "CIE Automotive India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Cinevista Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 22:59:03",
+            "period": "202603"
+        },
+        "Cipla Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Classic Electricals Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 23:27:24",
+            "period": "202603"
+        },
+        "CreditAccess Grameen Ltd": {
+            "status": "processing",
+            "updated": "16-06-2026 23:57:18",
+            "period": "202603"
+        },
+        "CRISIL Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Cyient DLM Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:06",
+            "period": "202603"
+        },
+        "Cyient Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:06",
+            "period": "202603"
+        },
+        "Dalmia Bharat Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "DCB Bank Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Decorous Investment & Trading Co Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:06",
+            "period": "202603"
+        },
+        "DHP India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:06",
+            "period": "202603"
+        },
+        "DIC India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Divine Power Energy Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "DK Enterprises Global Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "DMR Engineering Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Eimco Elecon (India) Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Elantas Beck India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Elecon Engineering Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Elegant Marbles & Grani Industries Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "eMudhra Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Enkei Wheels (India) Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Epigral Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Foseco India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Fredun Pharmaceuticals Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Gala Precision Engineering Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "GHCL Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "GHCL Textiles Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Gillanders Arbuthnot & Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Gillanders Arbuthnot & Company Ltd'"
+        },
+        "Glaxosmithkline Pharmaceuticals Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Global Longlife Hospital and Research Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Global Longlife Hospital and Research Ltd'"
+        },
+        "GM Breweries Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "GNA Axles Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Grand Foundry Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Gujarat Lease Financing Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Harmony Capital Services Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Havells India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "HDB Financial Services Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "HDFC Asset Management Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Hexa Tradex Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Hexaware Technologies Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "High Energy Batteries (India) Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Himadri Speciality Chemical Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Himalaya Nutravedics India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Hindustan Unilever Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Hindustan Zinc Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Home First Finance Company India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Horizon Reclaim (India) Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Huhtamaki India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "ICICI Lombard General Insurance Company Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "ICICI Prudential Asset Management Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "ICICI Prudential Life Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Indiafirst Life Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Indiamart Intermesh Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Indian Bank": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Indian Overseas Bank": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Infosys Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Innova Captab Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Inox India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Inspirisys Solutions Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "JB Chemicals & Pharmaceuticals Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Jindal Saw Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "John Cockerill India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202512"
+        },
+        "JSL Industries Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Kalana Ispat Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Kansai Nerolac Paints Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Kennametal India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202506"
+        },
+        "Key Corp Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Krishana Phoschem Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "KSB Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "L&T Finance Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "L&T Technology Services Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Larsen & Toubro Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Laurus Labs Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Lloyds Metals & Energy Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "LTM Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Madhya Bharat Agro Products Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Mahindra EPC Irrigation Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Master Components Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Mawana Sugars Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Merritronix Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Monika Alcobev Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Morarka Finance Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Mphasis Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Nelco Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "Nestle India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:07",
+            "period": "202603"
+        },
+        "New Delhi Television Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Nicco Parks & Resorts Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Norben Tea & Exports Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Novus Loyalty Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Oberoi Realty Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Odyssey Technologies Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Orient Cement Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Oseaspre Consultants Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Panasonic Carbon India Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Paras Healthcare Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Photoquip (India) Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "PIL ITALICA Lifestyle Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Piramal Finance Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "PlaySimple Games Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202512"
+        },
+        "PNGS Gargi Fashion Jewellery Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "PNGS Reva Diamond Jewellery Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Polycab India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Ponni Sugars (Erode) Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "PSP Projects Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Punjab National Bank": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Purple Finance Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Pushp Brand (India) Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "R Systems International Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202512"
+        },
+        "Raghav Productivity Enhancers Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Rain Industries Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Rallis India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Reliance Industrial Infrastructure Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Reliance Industries Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "RK Fashion Accessories Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sagar Cements Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sangam (India) Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sanofi Consumer Healthcare India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202512"
+        },
+        "Sanofi India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Satchmo Holdings Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "SBI Funds Management Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "SBI Life Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Schaeffler India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Seshasayee Paper and Boards Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "SG Finserve Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Shalimar Wires Industries Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Shankara Building Products Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Shankara Buildpro Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Shekhawati Industries Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Siemens Energy India Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202509"
+        },
+        "Sify Infinit Spaces Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "SJS Enterprises Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "SMC Global Securities Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Solitaire Machine Tools Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sonam Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Spinaroo Commercial Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "SRF Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "SSMD Agrotech India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "State Bank Of India": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Steel City Securities Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sterling and Wilson Renewable Energy Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Stovec Industries Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202512"
+        },
+        "Sula Vineyards Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sundram Fasteners Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sungold Capital Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sungold Media And Entertainment Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Sunshield Chemicals Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Supreme Industries Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Suraj Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Susan Electricals India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Swadeshi Polytex Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Swadha Nature Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Swarna Securities Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Swastika Investmart Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Chemicals Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Consultancy Services Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Consumer Products Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Elxsi Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Investment Corporation Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Motors Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Power Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Steel Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:08",
+            "period": "202603"
+        },
+        "Tata Technologies Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Tata Teleservices (Maharashtra) Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Teamtech Formwork Solutions Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Technojet Consultants Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Tejas Networks Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "The Indian Hotels Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Thyrocare Technologies Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Torrent Pharmaceuticals Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Trent Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Truhome Finance Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "UCO Bank": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Ugro Capital Ltd": {
+            "status": "uploaded",
+            "updated": "16-06-2026 23:30:50",
+            "period": "202603"
+        },
+        "Unifinz Capital India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Urban Company Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Vahh Chemicals Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Varun Beverages Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202512"
+        },
+        "Vedant Poly Fabs Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Vesuvius India Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202512"
+        },
+        "Vimta Labs Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Vinyl Chemicals (India) Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Vivekanand Cotspin Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Voltas Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Wipro Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Yaashvi Jewellers Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Yash Management & Satellite Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Zepto Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        },
+        "Zim Laboratories Ltd": {
+            "status": "queued",
+            "updated": "16-06-2026 17:27:09",
+            "period": "202603"
+        }
+    },
+    "2026-06-17": {
+        "Aakaar Medical Technologies Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:38:49",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Aakaar Medical Technologies Ltd'"
+        },
+        "ABB India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "ACC Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Accelya Solutions India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Adani Energy Solutions Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Adani Enterprises Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Adani Green Energy Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Adani Ports and Special Economic Zone Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Adani Power Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Adani Total Gas Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Adjia Technologies Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 10:13:39",
+            "period": "202603"
+        },
+        "Alkyl Amines Chemicals Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Amba Enterprises Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 10:20:51",
+            "period": "202603"
+        },
+        "Ambuja Cements Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Anand Rathi Share & Stock Brokers Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Anand Rathi Wealth Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Andhra Cements Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Angel One Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Apcotex Industries Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Apollo Ingredients Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 10:25:04",
+            "period": "202603"
+        },
+        "Aravali Securities & Finance Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:38:50",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Aravali Securities & Finance Ltd'"
+        },
+        "Archean Chemical Industries Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Asian Hotels (West) Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 10:26:58",
+            "period": "202603"
+        },
+        "Asian Paints Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47",
+            "period": "202603"
+        },
+        "Atishay Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:38:50",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Atishay Ltd'"
+        },
+        "Audroc Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 10:30:23",
+            "period": "202603"
+        },
+        "Aurique Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 10:31:32",
+            "period": "202603"
+        },
+        "Avantel Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Bank Of Baroda": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Bank Of India": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:47"
+        },
+        "Bank Of Maharashtra": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Bansisons Tea Industries Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 10:53:53",
+            "period": "202603"
+        },
+        "Benares Hotels Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Canara Bank": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Capital Small Finance Bank Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Care Ratings Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Castrol India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Cemindia Projects Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "CIE Automotive India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Cinevista Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 11:23:45",
+            "period": "202603"
+        },
+        "Cipla Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Classic Electricals Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 11:53:35",
+            "period": "202603"
+        },
+        "CreditAccess Grameen Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:14:02",
+            "period": "202603"
+        },
+        "CRISIL Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Cyient DLM Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:15:09",
+            "period": "202603"
+        },
+        "Cyient Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:16:16",
+            "period": "202603"
+        },
+        "Dalmia Bharat Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "DCB Bank Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Decorous Investment & Trading Co Ltd": {
+            "status": "processing",
+            "updated": "17-06-2026 12:16:17",
+            "period": "202603"
+        },
+        "DHP India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "DIC India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Divine Power Energy Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "DK Enterprises Global Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "DMR Engineering Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'DMR Engineering Ltd'"
+        },
+        "Eimco Elecon (India) Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Elantas Beck India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Elecon Engineering Company Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Elegant Marbles & Grani Industries Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Elegant Marbles & Grani Industries Ltd'"
+        },
+        "eMudhra Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Enkei Wheels (India) Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Epigral Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Foseco India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Fredun Pharmaceuticals Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Gala Precision Engineering Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "GHCL Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "GHCL Textiles Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Gillanders Arbuthnot & Company Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Gillanders Arbuthnot & Company Ltd'"
+        },
+        "Glaxosmithkline Pharmaceuticals Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Global Longlife Hospital and Research Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Global Longlife Hospital and Research Ltd'"
+        },
+        "GM Breweries Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "GNA Axles Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Grand Foundry Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Gujarat Lease Financing Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Harmony Capital Services Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Havells India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "HDB Financial Services Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "HDFC Asset Management Company Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Hexa Tradex Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Hexaware Technologies Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "High Energy Batteries (India) Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Himadri Speciality Chemical Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Himalaya Nutravedics India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Hindustan Unilever Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Hindustan Zinc Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Home First Finance Company India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Horizon Reclaim (India) Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Huhtamaki India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "ICICI Lombard General Insurance Company Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "ICICI Prudential Asset Management Company Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "ICICI Prudential Life Insurance Company Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Indiafirst Life Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Indiamart Intermesh Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:29",
+            "period": "202603"
+        },
+        "Indian Bank": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Indian Overseas Bank": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Infosys Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Innova Captab Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Inox India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Inspirisys Solutions Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "JB Chemicals & Pharmaceuticals Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Jindal Saw Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "John Cockerill India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202512"
+        },
+        "JSL Industries Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Kalana Ispat Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Kalana Ispat Ltd'"
+        },
+        "Kansai Nerolac Paints Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Kennametal India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Key Corp Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Key Corp Ltd'"
+        },
+        "Krishana Phoschem Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "KSB Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "L&T Finance Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "L&T Technology Services Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Larsen & Toubro Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Laurus Labs Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Lloyds Metals & Energy Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "LTM Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Madhya Bharat Agro Products Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Mahindra EPC Irrigation Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Mahindra EPC Irrigation Ltd'"
+        },
+        "Master Components Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Master Components Ltd'"
+        },
+        "Mawana Sugars Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Mawana Sugars Ltd'"
+        },
+        "Merritronix Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Monika Alcobev Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Morarka Finance Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603",
+            "reason": "Download error: Download button not found for 'Morarka Finance Ltd'"
+        },
+        "Mphasis Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Nelco Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "Nestle India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48",
+            "period": "202603"
+        },
+        "New Delhi Television Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Nicco Parks & Resorts Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Norben Tea & Exports Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Novus Loyalty Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Oberoi Realty Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Odyssey Technologies Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Orient Cement Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Oseaspre Consultants Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Panasonic Carbon India Company Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Paras Healthcare Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Photoquip (India) Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "PIL ITALICA Lifestyle Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Piramal Finance Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "PlaySimple Games Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202512"
+        },
+        "PNGS Gargi Fashion Jewellery Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "PNGS Reva Diamond Jewellery Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Polycab India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Ponni Sugars (Erode) Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "PSP Projects Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Punjab National Bank": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Purple Finance Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Pushp Brand (India) Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "R Systems International Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202512"
+        },
+        "Raghav Productivity Enhancers Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Rain Industries Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Rallis India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Reliance Industrial Infrastructure Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Reliance Industries Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "RK Fashion Accessories Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Sagar Cements Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Sangam (India) Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202603"
+        },
+        "Sanofi Consumer Healthcare India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:30",
+            "period": "202512"
+        },
+        "Sanofi India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Satchmo Holdings Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "SBI Funds Management Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "SBI Life Insurance Company Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Schaeffler India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Seshasayee Paper and Boards Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "SG Finserve Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Shalimar Wires Industries Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Shankara Building Products Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Shankara Buildpro Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Shekhawati Industries Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Siemens Energy India Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Sify Infinit Spaces Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "SJS Enterprises Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "SMC Global Securities Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Solitaire Machine Tools Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Sonam Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Spinaroo Commercial Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "SRF Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "SSMD Agrotech India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "State Bank Of India": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Steel City Securities Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Sterling and Wilson Renewable Energy Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Stovec Industries Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Sula Vineyards Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Sundram Fasteners Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Sungold Capital Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Sungold Media And Entertainment Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Sunshield Chemicals Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Supreme Industries Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Suraj Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Susan Electricals India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Swadeshi Polytex Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Swadha Nature Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Swarna Securities Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Swastika Investmart Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Chemicals Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Consultancy Services Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Consumer Products Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Elxsi Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Investment Corporation Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Motors Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Power Company Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Steel Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Technologies Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tata Teleservices (Maharashtra) Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Teamtech Formwork Solutions Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Technojet Consultants Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Tejas Networks Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "The Indian Hotels Company Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Thyrocare Technologies Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Torrent Pharmaceuticals Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Trent Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Truhome Finance Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "UCO Bank": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:48"
+        },
+        "Ugro Capital Ltd": {
+            "status": "uploaded",
+            "updated": "17-06-2026 12:09:49"
+        },
+        "Unifinz Capital India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Urban Company Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Vahh Chemicals Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Varun Beverages Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202512"
+        },
+        "Vedant Poly Fabs Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Vesuvius India Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202512"
+        },
+        "Vimta Labs Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Vinyl Chemicals (India) Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Vivekanand Cotspin Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:31",
+            "period": "202603"
+        },
+        "Voltas Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:32",
+            "period": "202603"
+        },
+        "Wipro Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:32",
+            "period": "202603"
+        },
+        "Yaashvi Jewellers Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:32",
+            "period": "202603"
+        },
+        "Yash Management & Satellite Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:32",
+            "period": "202603"
+        },
+        "Zepto Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:32",
+            "period": "202603"
+        },
+        "Zim Laboratories Ltd": {
+            "status": "queued",
+            "updated": "17-06-2026 10:08:32",
+            "period": "202603"
+        }
+    }
+}

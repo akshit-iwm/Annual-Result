@@ -1,0 +1,261 @@
+2026-06-16 12:18:27,657 [INFO] ============================================================
+2026-06-16 12:18:27,658 [INFO] Annual Result Processor v1 starting...
+2026-06-16 12:18:27,658 [INFO] EXE directory: E:\Annual_Results_Acex_exe
+2026-06-16 12:18:27,658 [INFO] Base directory: E:\Annual_Results_Acex_exe
+2026-06-16 12:18:27,658 [INFO] ACE Excel: E:\Annual_Results_Acex_exe\Annual Update Ace.xlsx
+2026-06-16 12:18:27,658 [INFO] Log file: E:\Annual_Results_Acex_exe\annual_processor.log
+2026-06-16 12:18:27,659 [INFO] ============================================================
+2026-06-16 12:18:27,659 [INFO] Trusted folder registered: E:\Annual_Results_Acex_exe\result_files
+2026-06-16 12:18:33,938 [INFO] Using Selenium Manager for ChromeDriver (auto-download)
+2026-06-16 12:18:35,348 [INFO] Chrome session created
+2026-06-16 12:18:35,348 [INFO] Logging in to Charcha (attempt 1/10)...
+2026-06-16 12:18:43,890 [INFO] Login succeeded — refreshing to clear any blank screen...
+2026-06-16 12:18:43,951 [INFO] Charcha login complete
+2026-06-16 12:18:43,953 [INFO] Loaded 71 already-uploaded companies (all-time, from annual_tracker.json) — will not re-queue: {'Tata Teleservices (Maharashtra) Ltd', 'Epigral Ltd', 'L&T Technology Services Ltd', 'Himadri Speciality Chemical Ltd', 'UCO Bank', 'Care Ratings Ltd', 'Schaeffler India Ltd', 'Adani Ports and Special Economic Zone Ltd', 'DIC India Ltd', 'Bank Of Maharashtra', 'Kennametal India Ltd', 'Archean Chemical Industries Ltd', 'Ugro Capital Ltd', 'Hexaware Technologies Ltd', 'Havells India Ltd', 'Mphasis Ltd', 'Canara Bank', 'GHCL Textiles Ltd', 'Accelya Solutions India Ltd', 'Infosys Ltd', 'ICICI Lombard General Insurance Company Ltd', 'Fredun Pharmaceuticals Ltd', 'Adani Enterprises Ltd', 'Gala Precision Engineering Ltd', 'Adani Power Ltd', 'Cipla Ltd', 'Glaxosmithkline Pharmaceuticals Ltd', 'GM Breweries Ltd', 'Adani Energy Solutions Ltd', 'Punjab National Bank', 'Foseco India Ltd', 'Alkyl Amines Chemicals Ltd', 'Indian Bank', 'Benares Hotels Ltd', 'Elantas Beck India Ltd', 'Angel One Ltd', 'Anand Rathi Share & Stock Brokers Ltd', 'GHCL Ltd', 'Siemens Energy India Ltd', 'Jindal Saw Ltd', 'Adani Total Gas Ltd', 'GNA Axles Ltd', 'Capital Small Finance Bank Ltd', 'Castrol India Ltd', 'Huhtamaki India Ltd', 'KSB Ltd', 'Stovec Industries Ltd', 'ACC Ltd', 'Dalmia Bharat Ltd', 'Andhra Cements Ltd', 'Ambuja Cements Ltd', 'CIE Automotive India Ltd', 'Rain Industries Ltd', 'Seshasayee Paper and Boards Ltd', 'Bank Of India', 'Adani Green Energy Ltd', 'eMudhra Ltd', 'Larsen & Toubro Ltd', 'Avantel Ltd', 'Bank Of Baroda', 'Cemindia Projects Ltd', 'ABB India Ltd', 'Enkei Wheels (India) Ltd', 'DCB Bank Ltd', 'Lloyds Metals & Energy Ltd', 'Anand Rathi Wealth Ltd', 'Sanofi India Ltd', 'CRISIL Ltd', 'L&T Finance Ltd', 'JB Chemicals & Pharmaceuticals Ltd', 'Apcotex Industries Ltd'}
+2026-06-16 12:18:43,954 [INFO] ACE Annual Poller thread started
+2026-06-16 12:18:43,954 [INFO] ACE Poller: Date changed to 16-06-2026. Resetting state.
+2026-06-16 12:18:43,954 [INFO] Annual Worker thread started
+2026-06-16 12:18:43,954 [INFO] All threads running (ACE Poller every 1800s + Worker). Press Ctrl+C to stop.
+2026-06-16 12:18:43,955 [INFO] Loaded 71 already-uploaded companies (all-time, from annual_tracker.json) — will not re-queue: {'Tata Teleservices (Maharashtra) Ltd', 'Epigral Ltd', 'L&T Technology Services Ltd', 'Himadri Speciality Chemical Ltd', 'UCO Bank', 'Care Ratings Ltd', 'Schaeffler India Ltd', 'Adani Ports and Special Economic Zone Ltd', 'DIC India Ltd', 'Bank Of Maharashtra', 'Kennametal India Ltd', 'Archean Chemical Industries Ltd', 'Ugro Capital Ltd', 'Hexaware Technologies Ltd', 'Havells India Ltd', 'Mphasis Ltd', 'Canara Bank', 'GHCL Textiles Ltd', 'Accelya Solutions India Ltd', 'Infosys Ltd', 'ICICI Lombard General Insurance Company Ltd', 'Fredun Pharmaceuticals Ltd', 'Adani Enterprises Ltd', 'Gala Precision Engineering Ltd', 'Adani Power Ltd', 'Cipla Ltd', 'Glaxosmithkline Pharmaceuticals Ltd', 'GM Breweries Ltd', 'Adani Energy Solutions Ltd', 'Punjab National Bank', 'Foseco India Ltd', 'Alkyl Amines Chemicals Ltd', 'Indian Bank', 'Benares Hotels Ltd', 'Elantas Beck India Ltd', 'Angel One Ltd', 'Anand Rathi Share & Stock Brokers Ltd', 'GHCL Ltd', 'Siemens Energy India Ltd', 'Jindal Saw Ltd', 'Adani Total Gas Ltd', 'GNA Axles Ltd', 'Capital Small Finance Bank Ltd', 'Castrol India Ltd', 'Huhtamaki India Ltd', 'KSB Ltd', 'Stovec Industries Ltd', 'ACC Ltd', 'Dalmia Bharat Ltd', 'Andhra Cements Ltd', 'Ambuja Cements Ltd', 'CIE Automotive India Ltd', 'Rain Industries Ltd', 'Seshasayee Paper and Boards Ltd', 'Bank Of India', 'Adani Green Energy Ltd', 'eMudhra Ltd', 'Larsen & Toubro Ltd', 'Avantel Ltd', 'Bank Of Baroda', 'Cemindia Projects Ltd', 'ABB India Ltd', 'Enkei Wheels (India) Ltd', 'DCB Bank Ltd', 'Lloyds Metals & Energy Ltd', 'Anand Rathi Wealth Ltd', 'Sanofi India Ltd', 'CRISIL Ltd', 'L&T Finance Ltd', 'JB Chemicals & Pharmaceuticals Ltd', 'Apcotex Industries Ltd'}
+2026-06-16 12:18:43,957 [INFO] Restored 221 already-queued companies from tracker (will not re-queue): {'New Delhi Television Ltd', 'Cyient Ltd', 'Voltas Ltd', 'Torrent Pharmaceuticals Ltd', 'Care Ratings Ltd', 'UCO Bank', 'Gujarat Lease Financing Ltd', 'SBI Funds Management Ltd', 'Archean Chemical Industries Ltd', 'Hindustan Unilever Ltd', 'Mphasis Ltd', 'Shankara Buildpro Ltd', 'Cinevista Ltd', 'Accelya Solutions India Ltd', 'Adani Enterprises Ltd', 'Sula Vineyards Ltd', 'HDFC Asset Management Company Ltd', 'Nicco Parks & Resorts Ltd', 'Sunshield Chemicals Ltd', 'Punjab National Bank', 'Ponni Sugars (Erode) Ltd', 'Alkyl Amines Chemicals Ltd', 'Gillanders Arbuthnot & Company Ltd', 'Shekhawati Industries Ltd', 'SJS Enterprises Ltd', 'Laurus Labs Ltd', 'Master Components Ltd', 'Polycab India Ltd', 'Satchmo Holdings Ltd', 'Castrol India Ltd', 'Tata Motors Ltd', 'High Energy Batteries (India) Ltd', 'KSB Ltd', 'JSL Industries Ltd', 'Monika Alcobev Ltd', 'Novus Loyalty Ltd', 'Ambuja Cements Ltd', 'Tata Steel Ltd', 'Aravali Securities & Finance Ltd', 'Adjia Technologies Ltd', 'Avantel Ltd', 'Key Corp Ltd', 'CreditAccess Grameen Ltd', 'eMudhra Ltd', 'Bank Of Baroda', 'Sify Infinit Spaces Ltd', 'Vahh Chemicals Ltd', 'Decorous Investment & Trading Co Ltd', 'Vimta Labs Ltd', 'Kansai Nerolac Paints Ltd', 'Amba Enterprises Ltd', 'Paras Healthcare Ltd', 'DCB Bank Ltd', 'Sundram Fasteners Ltd', 'Tata Consultancy Services Ltd', 'Oberoi Realty Ltd', 'Yash Management & Satellite Ltd', 'Apcotex Industries Ltd', 'Divine Power Energy Ltd', 'Rallis India Ltd', 'Tata Teleservices (Maharashtra) Ltd', 'Himadri Speciality Chemical Ltd', 'Sonam Ltd', 'LTM Ltd', 'Reliance Industrial Infrastructure Ltd', 'SSMD Agrotech India Ltd', 'Bank Of Maharashtra', 'DIC India Ltd', 'Elecon Engineering Company Ltd', 'Kennametal India Ltd', 'Urban Company Ltd', 'Hexaware Technologies Ltd', 'Pushp Brand (India) Ltd', 'Vinyl Chemicals (India) Ltd', 'Teamtech Formwork Solutions Ltd', 'Audroc Ltd', 'Photoquip (India) Ltd', 'ICICI Lombard General Insurance Company Ltd', 'Horizon Reclaim (India) Ltd', 'Adani Power Ltd', 'Oseaspre Consultants Ltd', 'Eimco Elecon (India) Ltd', 'Odyssey Technologies Ltd', 'Mahindra EPC Irrigation Ltd', 'Foseco India Ltd', 'Sterling and Wilson Renewable Energy Ltd', 'SMC Global Securities Ltd', 'Tata Chemicals Ltd', 'Anand Rathi Share & Stock Brokers Ltd', 'Raghav Productivity Enhancers Ltd', 'Sagar Cements Ltd', 'Spinaroo Commercial Ltd', 'Indiafirst Life Insurance Company Ltd', 'Reliance Industries Ltd', 'Steel City Securities Ltd', 'Sungold Media And Entertainment Ltd', 'RK Fashion Accessories Ltd', 'Swadeshi Polytex Ltd', 'Zepto Ltd', 'Stovec Industries Ltd', 'Aakaar Medical Technologies Ltd', 'ACC Ltd', 'Huhtamaki India Ltd', 'Indian Overseas Bank', 'Elegant Marbles & Grani Industries Ltd', 'Tata Technologies Ltd', 'Seshasayee Paper and Boards Ltd', 'Hexa Tradex Ltd', 'Bank Of India', 'Adani Green Energy Ltd', 'ABB India Ltd', 'Trent Ltd', 'Enkei Wheels (India) Ltd', 'Orient Cement Ltd', 'Sanofi India Ltd', 'JB Chemicals & Pharmaceuticals Ltd', 'The Indian Hotels Company Ltd', 'Cyient DLM Ltd', 'PIL ITALICA Lifestyle Ltd', 'Himalaya Nutravedics India Ltd', 'Tejas Networks Ltd', 'Krishana Phoschem Ltd', 'Asian Paints Ltd', 'Piramal Finance Ltd', 'PNGS Reva Diamond Jewellery Ltd', 'Hindustan Zinc Ltd', 'Havells India Ltd', 'Nelco Ltd', 'Suraj Ltd', 'HDB Financial Services Ltd', 'State Bank Of India', 'Swastika Investmart Ltd', 'Thyrocare Technologies Ltd', 'Cipla Ltd', 'Sangam (India) Ltd', 'Adani Energy Solutions Ltd', 'GM Breweries Ltd', 'Indian Bank', 'PSP Projects Ltd', 'Elantas Beck India Ltd', 'Tata Power Company Ltd', 'Asian Hotels (West) Ltd', 'Inox India Ltd', 'Susan Electricals India Ltd', 'Jindal Saw Ltd', 'Classic Electricals Ltd', 'SBI Life Insurance Company Ltd', 'Swarna Securities Ltd', 'Morarka Finance Ltd', 'Dalmia Bharat Ltd', 'ICICI Prudential Asset Management Company Ltd', 'Varun Beverages Ltd', 'ICICI Prudential Life Insurance Company Ltd', 'Inspirisys Solutions Ltd', 'R Systems International Ltd', 'DHP India Ltd', 'CIE Automotive India Ltd', 'Bansisons Tea Industries Ltd', 'Cemindia Projects Ltd', 'Kalana Ispat Ltd', 'PlaySimple Games Ltd', 'Supreme Industries Ltd', 'Lloyds Metals & Energy Ltd', 'Anand Rathi Wealth Ltd', 'Tata Elxsi Ltd', 'Vesuvius India Ltd', 'Epigral Ltd', 'Innova Captab Ltd', 'L&T Technology Services Ltd', 'Wipro Ltd', 'Adani Ports and Special Economic Zone Ltd', 'Schaeffler India Ltd', 'DMR Engineering Ltd', 'Ugro Capital Ltd', 'Indiamart Intermesh Ltd', 'John Cockerill India Ltd', 'Canara Bank', 'Unifinz Capital India Ltd', 'Sanofi Consumer Healthcare India Ltd', 'Vivekanand Cotspin Ltd', 'Nestle India Ltd', 'SG Finserve Ltd', 'Infosys Ltd', 'PNGS Gargi Fashion Jewellery Ltd', 'Swadha Nature Ltd', 'Madhya Bharat Agro Products Ltd', 'Purple Finance Ltd', 'Atishay Ltd', 'Truhome Finance Ltd', 'Aurique Ltd', 'Benares Hotels Ltd', 'Norben Tea & Exports Ltd', 'Angel One Ltd', 'Home First Finance Company India Ltd', 'Panasonic Carbon India Company Ltd', 'SRF Ltd', 'Mawana Sugars Ltd', 'Tata Consumer Products Ltd', 'Siemens Energy India Ltd', 'Grand Foundry Ltd', 'Adani Total Gas Ltd', 'Vedant Poly Fabs Ltd', 'Capital Small Finance Bank Ltd', 'Global Longlife Hospital and Research Ltd', 'Shalimar Wires Industries Ltd', 'Zim Laboratories Ltd', 'Andhra Cements Ltd', 'DK Enterprises Global Ltd', 'Rain Industries Ltd', 'Apollo Ingredients Ltd', 'Shankara Building Products Ltd', 'Solitaire Machine Tools Ltd', 'Technojet Consultants Ltd', 'Larsen & Toubro Ltd', 'Sungold Capital Ltd', 'Yaashvi Jewellers Ltd', 'Harmony Capital Services Ltd', 'CRISIL Ltd', 'L&T Finance Ltd', 'Merritronix Ltd', 'Tata Investment Corporation Ltd'}
+2026-06-16 12:18:43,958 [INFO] Opening ACE Annual Excel: E:\Annual_Results_Acex_exe\Annual Update Ace.xlsx
+2026-06-16 12:18:44,933 [INFO] Triggering RefreshAll on ACE Annual Excel...
+2026-06-16 12:18:44,937 [INFO] Waiting for ACE data connections to finish (max 300s)...
+2026-06-16 12:18:49,944 [INFO] ACE data connections finished after 5s
+2026-06-16 12:18:59,975 [INFO]   Aakaar Medical Technologies Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:18:59,984 [INFO]   ABB India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:18:59,991 [INFO]   ACC Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,002 [INFO]   Accelya Solutions India Ltd: period=202506.0 -> copy Jun-24 -> Jun-25
+2026-06-16 12:19:00,017 [INFO]   Adani Energy Solutions Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,031 [INFO]   Adani Enterprises Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,042 [INFO]   Adani Green Energy Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,053 [INFO]   Adani Ports and Special Economic Zone Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,066 [INFO]   Adani Power Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,077 [INFO]   Adani Total Gas Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,087 [INFO]   Adjia Technologies Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,096 [INFO]   Alkyl Amines Chemicals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,105 [INFO]   Amba Enterprises Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,114 [INFO]   Ambuja Cements Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,125 [INFO]   Anand Rathi Share & Stock Brokers Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,135 [INFO]   Anand Rathi Wealth Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,144 [INFO]   Andhra Cements Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,153 [INFO]   Angel One Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,161 [INFO]   Apcotex Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,169 [INFO]   Apollo Ingredients Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,178 [INFO]   Aravali Securities & Finance Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,187 [INFO]   Archean Chemical Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,197 [INFO]   Asian Hotels (West) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,206 [INFO]   Asian Paints Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,215 [INFO]   Atishay Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,224 [INFO]   Audroc Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,233 [INFO]   Aurique Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,243 [INFO]   Avantel Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,252 [INFO]   Bank Of Baroda: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,262 [INFO]   Bank Of India: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,272 [INFO]   Bank Of Maharashtra: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,282 [INFO]   Bansisons Tea Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,292 [INFO]   Benares Hotels Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,301 [INFO]   Canara Bank: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,312 [INFO]   Capital Small Finance Bank Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,322 [INFO]   Care Ratings Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,331 [INFO]   Castrol India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,340 [INFO]   Cemindia Projects Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,348 [INFO]   CIE Automotive India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,360 [INFO]   Cinevista Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,369 [INFO]   Cipla Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,379 [INFO]   Classic Electricals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,387 [INFO]   CreditAccess Grameen Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,395 [INFO]   CRISIL Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,403 [INFO]   Cyient DLM Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,412 [INFO]   Cyient Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,420 [INFO]   Dalmia Bharat Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,429 [INFO]   DCB Bank Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,437 [INFO]   Decorous Investment & Trading Co Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,447 [INFO]   DHP India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,455 [INFO]   DIC India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,463 [INFO]   Divine Power Energy Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,471 [INFO]   DK Enterprises Global Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,479 [INFO]   DMR Engineering Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,487 [INFO]   Eimco Elecon (India) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,497 [INFO]   Elantas Beck India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,506 [INFO]   Elecon Engineering Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,516 [INFO]   Elegant Marbles & Grani Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,525 [INFO]   eMudhra Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,533 [INFO]   Enkei Wheels (India) Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,541 [INFO]   Epigral Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,550 [INFO]   Foseco India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,561 [INFO]   Fredun Pharmaceuticals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,569 [INFO]   Gala Precision Engineering Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,578 [INFO]   GHCL Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,587 [INFO]   GHCL Textiles Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,596 [INFO]   Gillanders Arbuthnot & Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,604 [INFO]   Glaxosmithkline Pharmaceuticals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,613 [INFO]   Global Longlife Hospital and Research Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,621 [INFO]   GM Breweries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,629 [INFO]   GNA Axles Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,637 [INFO]   Grand Foundry Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,645 [INFO]   Gujarat Lease Financing Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,654 [INFO]   Harmony Capital Services Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,662 [INFO]   Havells India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,670 [INFO]   HDB Financial Services Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,679 [INFO]   HDFC Asset Management Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,687 [INFO]   Hexa Tradex Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,695 [INFO]   Hexaware Technologies Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,703 [INFO]   High Energy Batteries (India) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,710 [INFO]   Himadri Speciality Chemical Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,717 [INFO]   Himalaya Nutravedics India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,725 [INFO]   Hindustan Unilever Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,734 [INFO]   Hindustan Zinc Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,743 [INFO]   Home First Finance Company India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,750 [INFO]   Horizon Reclaim (India) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,758 [INFO]   Huhtamaki India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,766 [INFO]   ICICI Lombard General Insurance Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,775 [INFO]   ICICI Prudential Asset Management Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,782 [INFO]   ICICI Prudential Life Insurance Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,791 [INFO]   Indiafirst Life Insurance Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,800 [INFO]   Indiamart Intermesh Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,808 [INFO]   Indian Bank: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,816 [INFO]   Indian Overseas Bank: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,826 [INFO]   Infosys Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,833 [INFO]   Innova Captab Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,843 [INFO]   Inox India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,851 [INFO]   Inspirisys Solutions Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,860 [INFO]   JB Chemicals & Pharmaceuticals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,868 [INFO]   Jindal Saw Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,876 [INFO]   John Cockerill India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,884 [INFO]   JSL Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,892 [INFO]   Kalana Ispat Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,902 [INFO]   Kansai Nerolac Paints Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,911 [INFO]   Kennametal India Ltd: period=202506.0 -> copy Jun-24 -> Jun-25
+2026-06-16 12:19:00,918 [INFO]   Key Corp Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,926 [INFO]   Krishana Phoschem Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,934 [INFO]   KSB Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:00,945 [INFO]   L&T Finance Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,952 [INFO]   L&T Technology Services Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,961 [INFO]   Larsen & Toubro Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,969 [INFO]   Laurus Labs Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,977 [INFO]   Lloyds Metals & Energy Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,984 [INFO]   LTM Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:00,992 [INFO]   Madhya Bharat Agro Products Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,001 [INFO]   Mahindra EPC Irrigation Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,010 [INFO]   Master Components Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,018 [INFO]   Mawana Sugars Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,027 [INFO]   Merritronix Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,034 [INFO]   Monika Alcobev Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,042 [INFO]   Morarka Finance Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,049 [INFO]   Mphasis Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,057 [INFO]   Nelco Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,065 [INFO]   Nestle India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,073 [INFO]   New Delhi Television Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,081 [INFO]   Nicco Parks & Resorts Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,089 [INFO]   Norben Tea & Exports Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,098 [INFO]   Novus Loyalty Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,105 [INFO]   Oberoi Realty Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,114 [INFO]   Odyssey Technologies Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,122 [INFO]   Orient Cement Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,131 [INFO]   Oseaspre Consultants Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,139 [INFO]   Panasonic Carbon India Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,149 [INFO]   Paras Healthcare Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,157 [INFO]   Photoquip (India) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,165 [INFO]   PIL ITALICA Lifestyle Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,173 [INFO]   Piramal Finance Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,182 [INFO]   PlaySimple Games Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,190 [INFO]   PNGS Gargi Fashion Jewellery Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,199 [INFO]   PNGS Reva Diamond Jewellery Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,208 [INFO]   Polycab India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,217 [INFO]   Ponni Sugars (Erode) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,225 [INFO]   PSP Projects Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,234 [INFO]   Punjab National Bank: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,243 [INFO]   Purple Finance Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,251 [INFO]   Pushp Brand (India) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,260 [INFO]   R Systems International Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,267 [INFO]   Raghav Productivity Enhancers Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,276 [INFO]   Rain Industries Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,284 [INFO]   Rallis India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,293 [INFO]   Reliance Industrial Infrastructure Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,301 [INFO]   Reliance Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,310 [INFO]   RK Fashion Accessories Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,318 [INFO]   Sagar Cements Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,326 [INFO]   Sangam (India) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,335 [INFO]   Sanofi Consumer Healthcare India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,343 [INFO]   Sanofi India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,352 [INFO]   Satchmo Holdings Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,363 [INFO]   SBI Funds Management Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,372 [INFO]   SBI Life Insurance Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,380 [INFO]   Schaeffler India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,389 [INFO]   Seshasayee Paper and Boards Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,398 [INFO]   SG Finserve Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,407 [INFO]   Shalimar Wires Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,417 [INFO]   Shankara Building Products Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,425 [INFO]   Shankara Buildpro Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,433 [INFO]   Shekhawati Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,441 [INFO]   Siemens Energy India Ltd: period=202509.0 -> copy Sep-24 -> Sep-25
+2026-06-16 12:19:01,450 [INFO]   Sify Infinit Spaces Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,458 [INFO]   SJS Enterprises Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,466 [INFO]   SMC Global Securities Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,474 [INFO]   Solitaire Machine Tools Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,482 [INFO]   Sonam Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,489 [INFO]   Spinaroo Commercial Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,498 [INFO]   SRF Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,505 [INFO]   SSMD Agrotech India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,514 [INFO]   State Bank Of India: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,521 [INFO]   Steel City Securities Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,529 [INFO]   Sterling and Wilson Renewable Energy Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,536 [INFO]   Stovec Industries Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,545 [INFO]   Sula Vineyards Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,553 [INFO]   Sundram Fasteners Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,561 [INFO]   Sungold Capital Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,568 [INFO]   Sungold Media And Entertainment Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,577 [INFO]   Sunshield Chemicals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,585 [INFO]   Supreme Industries Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,593 [INFO]   Suraj Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,600 [INFO]   Susan Electricals India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,608 [INFO]   Swadeshi Polytex Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,616 [INFO]   Swadha Nature Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,625 [INFO]   Swarna Securities Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,633 [INFO]   Swastika Investmart Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,641 [INFO]   Tata Chemicals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,649 [INFO]   Tata Consultancy Services Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,656 [INFO]   Tata Consumer Products Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,665 [INFO]   Tata Elxsi Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,672 [INFO]   Tata Investment Corporation Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,681 [INFO]   Tata Motors Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,689 [INFO]   Tata Power Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,698 [INFO]   Tata Steel Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,706 [INFO]   Tata Technologies Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,715 [INFO]   Tata Teleservices (Maharashtra) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,723 [INFO]   Teamtech Formwork Solutions Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,731 [INFO]   Technojet Consultants Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,739 [INFO]   Tejas Networks Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,748 [INFO]   The Indian Hotels Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,756 [INFO]   Thyrocare Technologies Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,765 [INFO]   Torrent Pharmaceuticals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,773 [INFO]   Trent Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,782 [INFO]   Truhome Finance Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,791 [INFO]   UCO Bank: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,799 [INFO]   Ugro Capital Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,806 [INFO]   Unifinz Capital India Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,814 [INFO]   Urban Company Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,823 [INFO]   Vahh Chemicals Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,832 [INFO]   Varun Beverages Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,839 [INFO]   Vedant Poly Fabs Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,848 [INFO]   Vesuvius India Ltd: period=202512.0 -> copy Dec-24 -> Dec-25
+2026-06-16 12:19:01,856 [INFO]   Vimta Labs Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,864 [INFO]   Vinyl Chemicals (India) Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,872 [INFO]   Vivekanand Cotspin Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,880 [INFO]   Voltas Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,887 [INFO]   Wipro Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,896 [INFO]   Yaashvi Jewellers Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,904 [INFO]   Yash Management & Satellite Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,914 [INFO]   Zepto Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,922 [INFO]   Zim Laboratories Ltd: period=202603.0 -> copy Mar-25 -> Mar-26
+2026-06-16 12:19:01,922 [INFO] ACE Annual Excel: found 227 companies with valid periods
+2026-06-16 12:19:02,148 [INFO] ACE Poller: No new companies (all already done or queued)
+2026-06-16 12:19:43,956 [INFO] Status — Queue: ~0 | Done: 71 | Pending: 221
+2026-06-16 12:19:43,962 [INFO]
+==========================================================
+  ANNUAL TRACKER SUMMARY (16-06-2026 12:19)
+  Uploaded  (6): Fredun Pharmaceuticals Ltd, Gala Precision Engineering Ltd, GHCL Ltd, GHCL Textiles Ltd, Glaxosmithkline Pharmaceuticals Ltd, GNA Axles Ltd
+  Pending   (221): Aakaar Medical Technologies Ltd, ABB India Ltd, ACC Ltd, Accelya Solutions India Ltd, Adani Energy Solutions Ltd, Adani Enterprises Ltd, Adani Green Energy Ltd, Adani Ports and Special Economic Zone Ltd, Adani Power Ltd, Adani Total Gas Ltd, Adjia Technologies Ltd, Alkyl Amines Chemicals Ltd, Amba Enterprises Ltd, Ambuja Cements Ltd, Anand Rathi Share & Stock Brokers Ltd, Anand Rathi Wealth Ltd, Andhra Cements Ltd, Angel One Ltd, Apcotex Industries Ltd, Apollo Ingredients Ltd, Aravali Securities & Finance Ltd, Archean Chemical Industries Ltd, Asian Hotels (West) Ltd, Asian Paints Ltd, Atishay Ltd, Audroc Ltd, Aurique Ltd, Avantel Ltd, Bank Of Baroda, Bank Of India, Bank Of Maharashtra, Bansisons Tea Industries Ltd, Benares Hotels Ltd, Canara Bank, Capital Small Finance Bank Ltd, Care Ratings Ltd, Castrol India Ltd, Cemindia Projects Ltd, CIE Automotive India Ltd, Cinevista Ltd, Cipla Ltd, Classic Electricals Ltd, CreditAccess Grameen Ltd, CRISIL Ltd, Cyient DLM Ltd, Cyient Ltd, Dalmia Bharat Ltd, DCB Bank Ltd, Decorous Investment & Trading Co Ltd, DHP India Ltd, DIC India Ltd, Divine Power Energy Ltd, DK Enterprises Global Ltd, DMR Engineering Ltd, Eimco Elecon (India) Ltd, Elantas Beck India Ltd, Elecon Engineering Company Ltd, Elegant Marbles & Grani Industries Ltd, eMudhra Ltd, Enkei Wheels (India) Ltd, Epigral Ltd, Foseco India Ltd, Gillanders Arbuthnot & Company Ltd, Global Longlife Hospital and Research Ltd, GM Breweries Ltd, Grand Foundry Ltd, Gujarat Lease Financing Ltd, Harmony Capital Services Ltd, Havells India Ltd, HDB Financial Services Ltd, HDFC Asset Management Company Ltd, Hexa Tradex Ltd, Hexaware Technologies Ltd, High Energy Batteries (India) Ltd, Himadri Speciality Chemical Ltd, Himalaya Nutravedics India Ltd, Hindustan Unilever Ltd, Hindustan Zinc Ltd, Home First Finance Company India Ltd, Horizon Reclaim (India) Ltd, Huhtamaki India Ltd, ICICI Lombard General Insurance Company Ltd, ICICI Prudential Asset Management Company Ltd, ICICI Prudential Life Insurance Company Ltd, Indiafirst Life Insurance Company Ltd, Indiamart Intermesh Ltd, Indian Bank, Indian Overseas Bank, Infosys Ltd, Innova Captab Ltd, Inox India Ltd, Inspirisys Solutions Ltd, JB Chemicals & Pharmaceuticals Ltd, Jindal Saw Ltd, John Cockerill India Ltd, JSL Industries Ltd, Kalana Ispat Ltd, Kansai Nerolac Paints Ltd, Kennametal India Ltd, Key Corp Ltd, Krishana Phoschem Ltd, KSB Ltd, L&T Finance Ltd, L&T Technology Services Ltd, Larsen & Toubro Ltd, Laurus Labs Ltd, Lloyds Metals & Energy Ltd, LTM Ltd, Madhya Bharat Agro Products Ltd, Mahindra EPC Irrigation Ltd, Master Components Ltd, Mawana Sugars Ltd, Merritronix Ltd, Monika Alcobev Ltd, Morarka Finance Ltd, Mphasis Ltd, Nelco Ltd, Nestle India Ltd, New Delhi Television Ltd, Nicco Parks & Resorts Ltd, Norben Tea & Exports Ltd, Novus Loyalty Ltd, Oberoi Realty Ltd, Odyssey Technologies Ltd, Orient Cement Ltd, Oseaspre Consultants Ltd, Panasonic Carbon India Company Ltd, Paras Healthcare Ltd, Photoquip (India) Ltd, PIL ITALICA Lifestyle Ltd, Piramal Finance Ltd, PlaySimple Games Ltd, PNGS Gargi Fashion Jewellery Ltd, PNGS Reva Diamond Jewellery Ltd, Polycab India Ltd, Ponni Sugars (Erode) Ltd, PSP Projects Ltd, Punjab National Bank, Purple Finance Ltd, Pushp Brand (India) Ltd, R Systems International Ltd, Raghav Productivity Enhancers Ltd, Rain Industries Ltd, Rallis India Ltd, Reliance Industrial Infrastructure Ltd, Reliance Industries Ltd, RK Fashion Accessories Ltd, Sagar Cements Ltd, Sangam (India) Ltd, Sanofi Consumer Healthcare India Ltd, Sanofi India Ltd, Satchmo Holdings Ltd, SBI Funds Management Ltd, SBI Life Insurance Company Ltd, Schaeffler India Ltd, Seshasayee Paper and Boards Ltd, SG Finserve Ltd, Shalimar Wires Industries Ltd, Shankara Building Products Ltd, Shankara Buildpro Ltd, Shekhawati Industries Ltd, Siemens Energy India Ltd, Sify Infinit Spaces Ltd, SJS Enterprises Ltd, SMC Global Securities Ltd, Solitaire Machine Tools Ltd, Sonam Ltd, Spinaroo Commercial Ltd, SRF Ltd, SSMD Agrotech India Ltd, State Bank Of India, Steel City Securities Ltd, Sterling and Wilson Renewable Energy Ltd, Stovec Industries Ltd, Sula Vineyards Ltd, Sundram Fasteners Ltd, Sungold Capital Ltd, Sungold Media And Entertainment Ltd, Sunshield Chemicals Ltd, Supreme Industries Ltd, Suraj Ltd, Susan Electricals India Ltd, Swadeshi Polytex Ltd, Swadha Nature Ltd, Swarna Securities Ltd, Swastika Investmart Ltd, Tata Chemicals Ltd, Tata Consultancy Services Ltd, Tata Consumer Products Ltd, Tata Elxsi Ltd, Tata Investment Corporation Ltd, Tata Motors Ltd, Tata Power Company Ltd, Tata Steel Ltd, Tata Technologies Ltd, Tata Teleservices (Maharashtra) Ltd, Teamtech Formwork Solutions Ltd, Technojet Consultants Ltd, Tejas Networks Ltd, The Indian Hotels Company Ltd, Thyrocare Technologies Ltd, Torrent Pharmaceuticals Ltd, Trent Ltd, Truhome Finance Ltd, UCO Bank, Ugro Capital Ltd, Unifinz Capital India Ltd, Urban Company Ltd, Vahh Chemicals Ltd, Varun Beverages Ltd, Vedant Poly Fabs Ltd, Vesuvius India Ltd, Vimta Labs Ltd, Vinyl Chemicals (India) Ltd, Vivekanand Cotspin Ltd, Voltas Ltd, Wipro Ltd, Yaashvi Jewellers Ltd, Yash Management & Satellite Ltd, Zepto Ltd, Zim Laboratories Ltd
+  Failed    (0): none
+==========================================================
