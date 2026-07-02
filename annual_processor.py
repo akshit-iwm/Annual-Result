@@ -648,10 +648,8 @@ def log_status_summary():
 
 def _load_done_today() -> set:
     """
-    Return company names that should NOT be re-queued.
-    Since ACE appends and never removes companies, any company ever
-    successfully uploaded across any date should be skipped permanently.
-    Reads all dates in annual_tracker.json and collects every 'uploaded' entry.
+    Return set of keys (company_name, period) that should NOT be re-queued.
+    By including the period, a company gets re-processed if its period advances.
     """
     result = set()
 
@@ -662,12 +660,13 @@ def _load_done_today() -> set:
             for date_key, day_data in all_data.items():
                 for company_name, entry in day_data.items():
                     if entry.get("status") == "uploaded":
-                        result.add(company_name)
+                        period = str(entry.get("period", ""))
+                        result.add((company_name, period))
     except Exception as e:
         logging.warning(f"Could not load uploaded companies from tracker: {e}")
 
     # Backward compatibility: also check the old metadata.json files
-    # (including the Archived one) so we skip historically processed files.
+    # Add them with an empty string so they don't block new periods (like 202603).
     meta_paths = [
         os.path.join(DATA_DIR, "metadata.json"),
         os.path.join(BASE_DIR, "Archived", "metadata.json")
@@ -679,14 +678,14 @@ def _load_done_today() -> set:
                     meta_data = json.load(f)
                 # metadata.json is a simple dict: {"Company Name": {"uploader": "...", ...}}
                 for company_name in meta_data.keys():
-                    result.add(company_name)
+                    result.add((company_name, ""))
         except Exception as e:
             logging.warning(f"Could not load uploaded companies from {m_path}: {e}")
 
     if result:
         logging.info(
             f"Loaded {len(result)} already-uploaded companies "
-            f"(all-time, from annual_tracker.json) — will not re-queue: {result}"
+            f"(all-time, tracker + legacy) — will not re-queue."
         )
     return result
 
@@ -1526,6 +1525,8 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                 continue
 
             company_name = item["company_name"]
+            period       = str(item.get("period", ""))
+            company_key  = (company_name, period)
             attempt      = item.get("attempt", 1)
             src_month    = item.get("src_month", 3)
             src_yy       = item.get("src_yy",    25)
@@ -1553,14 +1554,14 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                     mark_skipped(company_name, f"Not found: {nf_err}")
                     tracker_update(company_name, "failed", reason="Company not found on Charcha")
                     with state_lock:
-                        in_queue.discard(company_name)
+                        in_queue.discard(company_key)
                     continue
                 except Exception as dl_err:
                     logging.warning(f"API download failed '{company_name}': {dl_err}")
                     mark_skipped(company_name, f"Download: {dl_err}")
                     tracker_update(company_name, "failed", reason=f"Download error: {dl_err}")
                     with state_lock:
-                        in_queue.discard(company_name)
+                        in_queue.discard(company_key)
                     continue
 
                 try:
@@ -1575,7 +1576,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                     force_kill_excel()
                     _safe_delete(downloaded)
                     with state_lock:
-                        in_queue.discard(company_name)
+                        in_queue.discard(company_key)
                     continue
 
                 if result_file and os.path.exists(result_file):
@@ -1583,8 +1584,8 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                         force_kill_excel()
                         api_upload(company_name, result_file)
                         with state_lock:
-                            done_today.add(company_name)
-                            in_queue.discard(company_name)
+                            done_today.add(company_key)
+                            in_queue.discard(company_key)
                         logging.info(f"ANNUAL FULLY DONE: {company_name}")
                         tracker_update(company_name, "uploaded")
                         send_slack_annual_processed(company_name)
@@ -1593,7 +1594,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                         mark_skipped(company_name, f"Upload: {ul_err}")
                         tracker_update(company_name, "failed", reason=f"Upload error: {ul_err}")
                         with state_lock:
-                            in_queue.discard(company_name)
+                            in_queue.discard(company_key)
 
                     _safe_delete(downloaded)
 
@@ -1622,7 +1623,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                 force_kill_excel()
                 _safe_delete(downloaded)
                 with state_lock:
-                    in_queue.discard(company_name)
+                    in_queue.discard(company_key)
 
             force_kill_excel()
 
@@ -1694,14 +1695,15 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
                                reason="Not in Charcha companies list")
                 continue
 
+            period = str(co.get("period", ""))
+            company_key = (company_name, period)
+
             with state_lock:
-                if company_name in done_today:
-                    # Ensure today's tracker reflects this as uploaded (fixes summary display)
-                    tracker_update(company_name, "uploaded")
+                if company_key in done_today:
                     continue
-                if company_name in in_queue:
+                if company_key in in_queue:
                     continue
-                in_queue.add(company_name)
+                in_queue.add(company_key)
 
             process_at = datetime.now() + timedelta(minutes=ANNUAL_INITIAL_DELAY_MINS)
             item = {
