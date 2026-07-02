@@ -1849,6 +1849,14 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
             norm_name = _normalize_name(company_name)
             company_key = (norm_name, period)
 
+            # Skip if the company file already exists in Updated_Excel folder
+            updated_file = os.path.join(UPDATED_DIR, f"{company_name}.xlsx")
+            if os.path.exists(updated_file):
+                logging.debug(
+                    f"ACE Poller: '{company_name}' already in Updated_Excel — skipping."
+                )
+                continue
+
             with state_lock:
                 if company_key in done_today or (norm_name, "") in done_today:
                     continue
