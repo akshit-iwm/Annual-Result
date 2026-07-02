@@ -1787,9 +1787,22 @@ def run():
         f"Press Ctrl+C to stop."
     )
 
+    last_login_time = time.time()
+
     try:
         while True:
             time.sleep(60)
+            
+            # Refresh API login every 24 hours (86400 seconds) to prevent token expiration
+            if time.time() - last_login_time >= 86400:
+                logging.info("Proactively refreshing API login (24-hour cycle)...")
+                try:
+                    if _api_client:
+                        _api_client.login()
+                    last_login_time = time.time()
+                except Exception as e:
+                    logging.error(f"Scheduled API login refresh failed: {e}")
+
             with state_lock:
                 logging.info(
                     f"Status — Queue: ~{processing_queue.qsize()} | "
