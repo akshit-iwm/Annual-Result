@@ -763,6 +763,10 @@ def read_ace_annual_companies() -> list:
         ace_app = xw.App(visible=True, add_book=False)
         ace_app.display_alerts = False
         try:
+            ace_app.api.Iteration = True
+        except Exception:
+            pass
+        try:
             ace_app.api.AutomationSecurity = 1  # msoAutomationSecurityLow
         except Exception:
             pass
@@ -1005,6 +1009,10 @@ def process_annual_excel_file(
 
     app = wb.app
     app.display_alerts = False
+    try:
+        app.api.Iteration = True
+    except Exception:
+        pass
     # Suppress the external-links "Update links?" prompt on the normal instance
     # (replaces the old update_links=False open arg, which is unavailable when
     # the file is opened via os.startfile).
