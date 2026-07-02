@@ -328,6 +328,130 @@ def force_kill_excel():
 
 
 # ----------------------------------------------------------------------------
+# Auto-dismiss Excel popup dialogs (Circular Reference, etc.)
+# ----------------------------------------------------------------------------
+# When os.startfile opens an Excel file, dialogs like the Circular Reference
+# warning appear BEFORE the script can attach and set display_alerts=False.
+# This background thread uses Win32 API to find and click "OK" on any Excel
+# dialog that would otherwise block the automation.
+
+_dialog_dismiss_stop = Event()
+
+
+def _auto_dismiss_excel_dialogs():
+    """
+    Background thread that periodically scans for modal Excel dialogs
+    (e.g. "circular reference", "update links") and clicks OK/Yes to
+    dismiss them. Runs until _dialog_dismiss_stop is set.
+    """
+    try:
+        import ctypes
+        import ctypes.wintypes
+
+        user32 = ctypes.windll.user32
+
+        # Win32 constants
+        GW_CHILD     = 5
+        BM_CLICK     = 0x00F5
+        WM_GETTEXT   = 0x000D
+        WM_GETTEXTLENGTH = 0x000E
+
+        EnumWindows         = user32.EnumWindows
+        EnumChildWindows    = user32.EnumChildWindows
+        GetWindowTextW      = user32.GetWindowTextW
+        GetWindowTextLengthW = user32.GetWindowTextLengthW
+        GetClassNameW       = user32.GetClassNameW
+        IsWindowVisible     = user32.IsWindowVisible
+        SendMessageW        = user32.SendMessageW
+        PostMessageW        = user32.PostMessageW
+
+        WNDENUMPROC = ctypes.WINFUNCTYPE(
+            ctypes.wintypes.BOOL,
+            ctypes.wintypes.HWND,
+            ctypes.wintypes.LPARAM,
+        )
+
+        def get_window_text(hwnd):
+            length = GetWindowTextLengthW(hwnd)
+            if length == 0:
+                return ""
+            buf = ctypes.create_unicode_buffer(length + 1)
+            GetWindowTextW(hwnd, buf, length + 1)
+            return buf.value
+
+        def get_class_name(hwnd):
+            buf = ctypes.create_unicode_buffer(256)
+            GetClassNameW(hwnd, buf, 256)
+            return buf.value
+
+        def click_button(parent_hwnd, button_texts=("OK", "Yes", "&OK", "&Yes")):
+            """Find and click a button in the dialog. Returns True if clicked."""
+            clicked = [False]
+
+            def enum_child(hwnd, _lparam):
+                cls = get_class_name(hwnd)
+                if "Button" in cls:
+                    txt = get_window_text(hwnd).strip().replace("&", "")
+                    for bt in button_texts:
+                        bt_clean = bt.replace("&", "")
+                        if txt.upper() == bt_clean.upper():
+                            PostMessageW(hwnd, BM_CLICK, 0, 0)
+                            clicked[0] = True
+                            return False  # stop enumerating
+                return True  # continue
+
+            EnumChildWindows(parent_hwnd, WNDENUMPROC(enum_child), 0)
+            return clicked[0]
+
+        while not _dialog_dismiss_stop.is_set():
+            try:
+                dialogs_found = []
+
+                def enum_windows(hwnd, _lparam):
+                    if not IsWindowVisible(hwnd):
+                        return True
+                    title = get_window_text(hwnd)
+                    cls   = get_class_name(hwnd)
+                    # Excel dialogs typically have class #32770 (standard dialog)
+                    # or NUIDialog, with title "Microsoft Excel"
+                    if "Microsoft Excel" in title and cls in ("#32770", "NUIDialog", "bosa_sdm_msword"):
+                        dialogs_found.append(hwnd)
+                    return True
+
+                EnumWindows(WNDENUMPROC(enum_windows), 0)
+
+                for hwnd in dialogs_found:
+                    title = get_window_text(hwnd)
+                    if click_button(hwnd):
+                        logging.info(
+                            f"Auto-dismissed Excel dialog: '{title}' (hwnd={hwnd})"
+                        )
+            except Exception:
+                pass  # silently ignore — this is a best-effort helper
+
+            _dialog_dismiss_stop.wait(1.5)  # check every 1.5 seconds
+
+    except ImportError:
+        # ctypes.windll not available (Linux) — thread exits silently
+        logging.debug("Auto-dismiss thread: not on Windows, exiting.")
+    except Exception as e:
+        logging.warning(f"Auto-dismiss thread error: {e}")
+
+
+def start_dialog_dismisser():
+    """Start the background dialog-dismisser thread. Safe to call multiple times."""
+    _dialog_dismiss_stop.clear()
+    t = Thread(target=_auto_dismiss_excel_dialogs, daemon=True, name="Excel-Dialog-Dismisser")
+    t.start()
+    return t
+
+
+def stop_dialog_dismisser():
+    """Signal the dialog-dismisser thread to stop."""
+    _dialog_dismiss_stop.set()
+
+
+# ----------------------------------------------------------------------------
 # ACE Add-in loader
 # ----------------------------------------------------------------------------
 # The ACE/Accord data plug-in is TWO components that BOTH must be loaded:
@@ -973,6 +1097,11 @@ def process_annual_excel_file(
     force_kill_excel()
     time.sleep(2)
 
+    # Start the dialog auto-dismisser BEFORE opening Excel so it can catch
+    # Circular Reference / Update Links popups that appear during file load
+    # (before we can attach and set display_alerts = False).
+    start_dialog_dismisser()
+
     # IMPORTANT: open via the user's NORMAL Excel (os.startfile) and then attach,
     # exactly like the quarterly processor (result_processor_v3.process_excel_file).
     #
@@ -1006,6 +1135,7 @@ def process_annual_excel_file(
 
     if not wb:
         logging.error(f"Could not attach to workbook: {file_name}")
+        stop_dialog_dismisser()
         return None
 
     app = wb.app
@@ -1131,6 +1261,7 @@ def process_annual_excel_file(
     if pl_start == -1:
         logging.warning(f"Missing P&L START marker for {company_name} — skipping")
         wb.close()
+        stop_dialog_dismisser()
         return None
 
     # ------------------------------------------------------------------
@@ -1221,6 +1352,7 @@ def process_annual_excel_file(
                 f"Annual headers: {ann_headers}"
             )
             wb.close()
+            stop_dialog_dismisser()
             return None
 
     if tgt_col == -1:
@@ -1487,6 +1619,7 @@ def process_annual_excel_file(
                 f"File NOT saved (would corrupt Charcha). Re-queuing."
             )
             wb.close()
+            stop_dialog_dismisser()
             return None
     except Exception as guard_err:
         logging.warning(f"#NAME? guard check failed (non-fatal): {guard_err}")
@@ -1503,6 +1636,7 @@ def process_annual_excel_file(
     update_metadata(company_name)
     time.sleep(2)
     wb.close()
+    stop_dialog_dismisser()
     logging.info(f"Saved: {final_path}")
     return final_path
 
