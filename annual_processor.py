@@ -1539,7 +1539,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                 f"{company_name}  (attempt #{attempt})"
             )
             logging.info(f"{'='*58}")
-            tracker_update(company_name, "processing")
+            tracker_update(company_name, "processing", period=period)
 
             downloaded = None
 
@@ -1587,7 +1587,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                             done_today.add(company_key)
                             in_queue.discard(company_key)
                         logging.info(f"ANNUAL FULLY DONE: {company_name}")
-                        tracker_update(company_name, "uploaded")
+                        tracker_update(company_name, "uploaded", period=period)
                         send_slack_annual_processed(company_name)
                     except Exception as ul_err:
                         logging.error(f"Upload failed '{company_name}': {ul_err}")
@@ -1610,7 +1610,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                     item["attempt"] = attempt + 1
                     processing_queue.put((retry_at, id(item), item))
                     tracker_update(
-                        company_name, "retrying",
+                        company_name, "retrying", period=period,
                         reason=f"Data not live yet, retry at {retry_at.strftime('%H:%M:%S')} (attempt #{attempt+1})"
                     )
                     logging.info(
@@ -1699,7 +1699,7 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
             company_key = (company_name, period)
 
             with state_lock:
-                if company_key in done_today:
+                if company_key in done_today or (company_name, "") in done_today:
                     continue
                 if company_key in in_queue:
                     continue
