@@ -138,6 +138,7 @@ for d in [RESULT_FILES_DIR, UPDATED_DIR, DATA_DIR]:
 # ================================================================
 state_lock = Lock()
 done_today = set()
+failed_today = set()
 in_queue   = set()
 stop_event = Event()
 
@@ -648,7 +649,7 @@ def log_status_summary():
 
 def _load_done_today() -> set:
     """
-    Return set of keys (company_name, period) that should NOT be re-queued.
+    Return set of keys (norm_name, period) that should NOT be re-queued.
     By including the period, a company gets re-processed if its period advances.
     """
     result = set()
@@ -661,7 +662,7 @@ def _load_done_today() -> set:
                 for company_name, entry in day_data.items():
                     if entry.get("status") == "uploaded":
                         period = str(entry.get("period", ""))
-                        result.add((company_name, period))
+                        result.add((_normalize_name(company_name), period))
     except Exception as e:
         logging.warning(f"Could not load uploaded companies from tracker: {e}")
 
@@ -678,7 +679,7 @@ def _load_done_today() -> set:
                     meta_data = json.load(f)
                 # metadata.json is a simple dict: {"Company Name": {"uploader": "...", ...}}
                 for company_name in meta_data.keys():
-                    result.add((company_name, ""))
+                    result.add((_normalize_name(company_name), ""))
         except Exception as e:
             logging.warning(f"Could not load uploaded companies from {m_path}: {e}")
 
@@ -1534,7 +1535,8 @@ def annual_worker_thread(processing_queue: PriorityQueue):
 
             company_name = item["company_name"]
             period       = str(item.get("period", ""))
-            company_key  = (company_name, period)
+            norm_name    = _normalize_name(company_name)
+            company_key  = (norm_name, period)
             attempt      = item.get("attempt", 1)
             src_month    = item.get("src_month", 3)
             src_yy       = item.get("src_yy",    25)
@@ -1563,6 +1565,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                     tracker_update(company_name, "failed", reason="Company not found on Charcha")
                     with state_lock:
                         in_queue.discard(company_key)
+                        failed_today.add(company_key)
                     continue
                 except Exception as dl_err:
                     logging.warning(f"API download failed '{company_name}': {dl_err}")
@@ -1570,6 +1573,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                     tracker_update(company_name, "failed", reason=f"Download error: {dl_err}")
                     with state_lock:
                         in_queue.discard(company_key)
+                        failed_today.add(company_key)
                     continue
 
                 try:
@@ -1585,6 +1589,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                     _safe_delete(downloaded)
                     with state_lock:
                         in_queue.discard(company_key)
+                        failed_today.add(company_key)
                     continue
 
                 if result_file and os.path.exists(result_file):
@@ -1603,6 +1608,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                         tracker_update(company_name, "failed", reason=f"Upload error: {ul_err}")
                         with state_lock:
                             in_queue.discard(company_key)
+                            failed_today.add(company_key)
 
                     _safe_delete(downloaded)
 
@@ -1632,6 +1638,7 @@ def annual_worker_thread(processing_queue: PriorityQueue):
                 _safe_delete(downloaded)
                 with state_lock:
                     in_queue.discard(company_key)
+                    failed_today.add(company_key)
 
             force_kill_excel()
 
@@ -1669,6 +1676,7 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
             current_date = today_str
             with state_lock:
                 done_today.clear()
+                failed_today.clear()
                 in_queue.clear()
                 # Only uploaded companies are permanently skipped (all-time, all dates).
                 # failed / queued / processing / retrying will be re-queued naturally
@@ -1704,10 +1712,13 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
                 continue
 
             period = str(co.get("period", ""))
-            company_key = (company_name, period)
+            norm_name = _normalize_name(company_name)
+            company_key = (norm_name, period)
 
             with state_lock:
-                if company_key in done_today or (company_name, "") in done_today:
+                if company_key in done_today or (norm_name, "") in done_today:
+                    continue
+                if company_key in failed_today:
                     continue
                 if company_key in in_queue:
                     continue
