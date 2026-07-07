@@ -16,6 +16,7 @@ Flow:
         - Find MAR-25 column (source)
         - Find / create MAR-26 column (target)
         - COPY MAR-25 formulas → PASTE into MAR-26 column
+          (This native Excel copy automatically updates relative references, identical to dragging)
           (Presentation Data rows are skipped)
      e. RefreshAll + CalculateFull
      f. Compare PAT before vs after
@@ -1499,6 +1500,8 @@ def process_annual_excel_file(
 
     # ------------------------------------------------------------------
     # STEP 6 — Copy MAR-25 formulas → MAR-26
+    # Note: Using native Copy-Paste automatically updates relative cell
+    # references in formulas, just like AutoFill/dragging does in Excel.
     # ------------------------------------------------------------------
     for seg_start, seg_end in copy_ranges:
         try:
@@ -1862,7 +1865,7 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
                     continue
                 if company_key in failed_today:
                     continue
-                if company_key in in_queue:
+                if company_key in in_queu
                     continue
                 in_queue.add(company_key)
 
