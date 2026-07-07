@@ -17,7 +17,7 @@ Flow:
         - Find / create MAR-26 column (target)
         - COPY MAR-25 formulas → PASTE into MAR-26 column
           (This native Excel copy automatically updates relative references, identical to dragging)
-          (Presentation Data rows are skipped)
+          (Presentation Data rows and Checksum-of-qtr-to-Annual → Estimate deviation rows are skipped)
      e. RefreshAll + CalculateFull
      f. Compare PAT before vs after
      g. Check Sources of Funds > 0
@@ -1180,12 +1180,14 @@ def process_annual_excel_file(
     rows_scan  = sheet.range("A1:A500").value or []
     pl_start   = -1
     val_end    = -1
-    pres_start = -1
-    pres_end   = -1
-    pat_row    = -1
-    bs_start   = -1
-    bs_end     = -1
-    sof_row    = -1
+    pres_start     = -1
+    pres_end       = -1
+    pat_row        = -1
+    bs_start       = -1
+    bs_end         = -1
+    sof_row        = -1
+    checksum_start = -1   # "Checksum Of qtr to Annual"
+    checksum_end   = -1   # "Estimate deviation"
 
     for r_idx, label in enumerate(rows_scan):
         if not label:
@@ -1211,6 +1213,16 @@ def process_annual_excel_file(
             if pres_end == -1:
                 pres_end = r_idx + 1
                 logging.info(f"Presentation Data (End) at row {pres_end}")
+
+        if "CHECKSUM" in lbl and "QTR" in lbl and "ANNUAL" in lbl:
+            if checksum_start == -1:
+                checksum_start = r_idx + 1
+                logging.info(f"Checksum Of qtr to Annual at row {checksum_start}: '{label}'")
+
+        if "ESTIMATE" in lbl and "DEVIATION" in lbl:
+            if checksum_end == -1:
+                checksum_end = r_idx + 1
+                logging.info(f"Estimate deviation at row {checksum_end}: '{label}'")
 
         if "BALANCE SHEET" in lbl and "START" in lbl:
             if bs_start == -1:
@@ -1256,6 +1268,7 @@ def process_annual_excel_file(
     logging.info(
         f"Markers -> PL_START={pl_start}, VAL_END={val_end}, "
         f"PRES_START={pres_start}, PRES_END={pres_end}, PAT={pat_row}, "
+        f"CHECKSUM_START={checksum_start}, CHECKSUM_END={checksum_end}, "
         f"BS_START={bs_start}, BS_END={bs_end}, SOF={sof_row}"
     )
 
@@ -1372,18 +1385,35 @@ def process_annual_excel_file(
     mar26_col = tgt_col
 
     # ------------------------------------------------------------------
-    # STEP 4 — Build row ranges (exclude Presentation Data)
+    # STEP 4 — Build row ranges (exclude Presentation Data AND
+    #          Checksum-of-qtr-to-Annual … Estimate deviation section)
     # ------------------------------------------------------------------
-    copy_ranges = []
+    # Collect all exclusion zones (start_row, end_row) — both inclusive
+    exclusions = []
     if pres_start != -1 and pres_end != -1:
-        if pl_start <= pres_start - 1:
-            copy_ranges.append((pl_start, pres_start - 1))
-        if pres_end + 1 <= copy_end:
-            copy_ranges.append((pres_end + 1, copy_end))
-    else:
-        copy_ranges.append((pl_start, copy_end))
+        exclusions.append((pres_start, pres_end))
+    if checksum_start != -1 and checksum_end != -1:
+        exclusions.append((checksum_start, checksum_end))
+    # Sort by start row so we can split ranges sequentially
+    exclusions.sort(key=lambda x: x[0])
 
-    logging.info(f"Row ranges to copy (excl Pres Data): {copy_ranges}")
+    # Build copy_ranges by splitting the full range around each exclusion
+    copy_ranges = [(pl_start, copy_end)]  # start with the full range
+    for ex_start, ex_end in exclusions:
+        new_ranges = []
+        for seg_s, seg_e in copy_ranges:
+            if ex_start > seg_e or ex_end < seg_s:
+                # exclusion doesn't overlap this segment — keep as-is
+                new_ranges.append((seg_s, seg_e))
+            else:
+                # split around the exclusion
+                if seg_s <= ex_start - 1:
+                    new_ranges.append((seg_s, ex_start - 1))
+                if ex_end + 1 <= seg_e:
+                    new_ranges.append((ex_end + 1, seg_e))
+        copy_ranges = new_ranges
+
+    logging.info(f"Row ranges to copy (excl Pres Data, Checksum-Estimate): {copy_ranges}")
 
     # ------------------------------------------------------------------
     # STEP 5 — Write MAR-26 header if column is new

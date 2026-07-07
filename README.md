@@ -124,13 +124,13 @@ This is what happens inside `process_annual_excel_file()` for each company:
 
 | Step | Description |
 |------|-------------|
-| **1. Scan markers** | Reads Column A (rows 1–500) to find section boundaries: P&L Start, Valuation End, Presentation Data Start/End, Balance Sheet Start/End, PAT row, Sources of Funds row |
+| **1. Scan markers** | Reads Column A (rows 1–500) to find section boundaries: P&L Start, Valuation End, Presentation Data Start/End, Checksum Of qtr to Annual, Estimate deviation, Balance Sheet Start/End, PAT row, Sources of Funds row |
 | **2. Find QTR marker** | Scans header row 1 for `QTR` or `QUARTERLY` — this marks the right boundary of the annual section |
 | **3. Find source & target columns** | In the annual section (columns before QTR marker), finds the source column (e.g. `Mar-25`) and target column (e.g. `Mar-26`) by matching dates. Falls back to the two most recent dated columns if the ACE period doesn't match (fiscal year change) |
-| **4. Build copy ranges** | Creates row ranges from P&L Start to last used row, **excluding Presentation Data rows** |
+| **4. Build copy ranges** | Creates row ranges from P&L Start to last used row, **excluding Presentation Data rows** and **Checksum Of qtr to Annual → Estimate deviation rows** |
 | **5. Write target header** | If the target column doesn't exist yet, creates it with the correct date header |
 | **5b. Backup to Historical Estimates** | Copies existing target column values into a "Historical Estimates" column. Uses **first-write-wins** policy — never overwrites an existing backup |
-| **6. Copy formulas** | Copies the source column's formulas → target column using `Range.Copy(Destination=...)`. This native Excel copy operation automatically updates relative cell references in formulas, making it mathematically identical to dragging (AutoFill) the formula column in Excel. |
+| **6. Copy formulas** | Copies the source column's formulas → target column using `Range.Copy(Destination=...)`. This native Excel copy operation automatically updates relative cell references in formulas, making it mathematically identical to dragging (AutoFill) the formula column in Excel. Rows in the "Checksum Of qtr to Annual" → "Estimate deviation" section are excluded from copying. |
 | **7. Pre-refresh PAT** | Records the PAT value before ACE refresh |
 | **8. ACE data refresh** | Triggers ACE ribbon Refresh via Win32 keystrokes, then calls `RefreshAll` + `CalculateFull` |
 | **9. Post-refresh validation** | Compares pre vs post PAT. Checks Sources of Funds > 0. Checks for `#NAME?` errors (ACE add-in failure — aborts save to prevent corruption) |
