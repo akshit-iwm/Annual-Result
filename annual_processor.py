@@ -1865,7 +1865,7 @@ def ace_annual_poller_thread(processing_queue: PriorityQueue):
                     continue
                 if company_key in failed_today:
                     continue
-                if company_key in in_queu
+                if company_key in in_queue:
                     continue
                 in_queue.add(company_key)
 
